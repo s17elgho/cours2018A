@@ -6,8 +6,9 @@ pages:
   - Cours: cours/index.md
   - Contribuer:
       - Définir le contenu : contribuer/contenu.md
+      - Comment réaliser du contenu : contribuer/realiser.md
+      - Comment progresser : contribuer/progresser.md
       - Les outils utilisés: contribuer/outils.md
-      - Comment contribuer : contribuer/comment.md
   - Déroulé:
       - Séance 1: deroule/seance1.md
       - Séance 2: deroule/seance2.md

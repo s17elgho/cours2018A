@@ -1,7 +1,12 @@
-## Outils utilisés
-* Markdown comme format de base
+# Outils utilisés
+
+Markdown comme format de base
+
+## Des outils pour travailler ensemble
 * HackMD pour l'édition collaborative
 * Huit.re comme raccourcisseur d'URLs
+
+## La chaîne de publication
 
 * MkDocs pour générer un site propre
 * [Github](https://github.com/) sera notre outil commun la gestion des pages du cours

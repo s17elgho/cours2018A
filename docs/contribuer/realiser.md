@@ -1,5 +1,8 @@
-## Tutorial pour contribuer
+## Tutorial pour réaliser du contenu
 
+**Site Web**
+  * [Github](https://github.com/) sera notre outil commun de gestion de code.
+  * Ce site est proposé en tant que [dépôt sur Github](https://explorweb.github.io/cours2018A/)
 `git clone https://github.com/explorweb/cours2018A.git ` ou `git checkout` pour créer une branche
 
 mkdocs new cours2018A/
