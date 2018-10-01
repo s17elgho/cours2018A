@@ -1,0 +1,139 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Cours Exploration du Web\n\n\nIMT Atlantique \nELU 525\n\n\n\n\nPremi\u00e8re session : Avril - Juin 2018\n\n\nSeconde session : octobre - d\u00e9cembre 2018\n\n\n\n\nAvertissement\n\n\nCe site est un site web qui sera progressivement construit pendant le cours. Tr\u00e8s d\u00e9pouill\u00e9 au d\u00e9but, nous verrons ce qu'il en est \u00e0 la fin.\nIl est donc \u00e0 la fois support de cours, d\u00e9fini de mani\u00e8re collaborative, et le projet transverse du cours, au sens site construit pendant le cours.\n\n\nObjectifs du cours\n\n\nExplorer ce qu'est le web, ses fondements, les techniques sous-jacentes, des outils, et les usages.\n\n\nUn rapport d'\u00e9tonnement en guise d'introduction :\n\n\n \n\n\n\n \n \n Apprendre en 2018\n \n from \nJean-Marie Gilliot\n \n\n\n\nValidation mutuelle\n\n\n\n\nNous utiliserons un outil tiers pour valider l'acquisition de comp\u00e9tences au travers d'une s\u00e9rie de \nbrevets\n. Pour cela merci de vous inscrire sur l'\nespace de construction et de validation mutuelle de comp\u00e9tences du cours",
+            "title": "Home"
+        },
+        {
+            "location": "/#cours-exploration-du-web",
+            "text": "",
+            "title": "Cours Exploration du Web"
+        },
+        {
+            "location": "/#imt-atlantique-elu-525",
+            "text": "Premi\u00e8re session : Avril - Juin 2018  Seconde session : octobre - d\u00e9cembre 2018",
+            "title": "IMT Atlantique ELU 525"
+        },
+        {
+            "location": "/#avertissement",
+            "text": "Ce site est un site web qui sera progressivement construit pendant le cours. Tr\u00e8s d\u00e9pouill\u00e9 au d\u00e9but, nous verrons ce qu'il en est \u00e0 la fin.\nIl est donc \u00e0 la fois support de cours, d\u00e9fini de mani\u00e8re collaborative, et le projet transverse du cours, au sens site construit pendant le cours.",
+            "title": "Avertissement"
+        },
+        {
+            "location": "/#objectifs-du-cours",
+            "text": "Explorer ce qu'est le web, ses fondements, les techniques sous-jacentes, des outils, et les usages.  Un rapport d'\u00e9tonnement en guise d'introduction :          Apprendre en 2018    from  Jean-Marie Gilliot",
+            "title": "Objectifs du cours"
+        },
+        {
+            "location": "/#validation-mutuelle",
+            "text": "Nous utiliserons un outil tiers pour valider l'acquisition de comp\u00e9tences au travers d'une s\u00e9rie de  brevets . Pour cela merci de vous inscrire sur l' espace de construction et de validation mutuelle de comp\u00e9tences du cours",
+            "title": "Validation mutuelle"
+        },
+        {
+            "location": "/cours/",
+            "text": "Retrouvez ici les contenus produits par les participants au cours\n\n\nDes contenus dignes d'int\u00e9r\u00eat\n\n\nN'h\u00e9sitez pas \u00e0 proposer ici des r\u00e9f\u00e9rences int\u00e9ressantes\n\n\nSessions Pr\u00e9c\u00e9dentes\n\n\nLe cours du semestre de printemps 2018",
+            "title": "Cours"
+        },
+        {
+            "location": "/cours/#retrouvez-ici-les-contenus-produits-par-les-participants-au-cours",
+            "text": "",
+            "title": "Retrouvez ici les contenus produits par les participants au cours"
+        },
+        {
+            "location": "/cours/#des-contenus-dignes-dinteret",
+            "text": "N'h\u00e9sitez pas \u00e0 proposer ici des r\u00e9f\u00e9rences int\u00e9ressantes",
+            "title": "Des contenus dignes d'int\u00e9r\u00eat"
+        },
+        {
+            "location": "/cours/#sessions-precedentes",
+            "text": "",
+            "title": "Sessions Pr\u00e9c\u00e9dentes"
+        },
+        {
+            "location": "/cours/#le-cours-du-semestre-de-printemps-2018",
+            "text": "",
+            "title": "Le cours du semestre de printemps 2018"
+        },
+        {
+            "location": "/contribuer/contenu/",
+            "text": "Comment contribuer \u00e0 ce cours\n\n\nR\u00e9fl\u00e9chir ensemble au contenu\n\n\n\n\nPrise de notes partag\u00e9es\n\nIl existe maintenant de nombreux outils qui permettent l'\u00e9dition partag\u00e9e. A vous de d\u00e9couvrir ceux qui vous seront utlies. Nous proposons quelques espaces pour d\u00e9marrer.\n\n\nQuelle exploration du Web\n Un espace pour \u00e9changer sur ce que vous attendez, avec \nHackMD\n un \u00e9diteur MD collaboratif en ligne;\n\n\nRapport d'\u00e9tonnement\n pour noter tout ce qui vous \u00e9tonne, vous intrigue, vous donne envie d'aller plus loin sur le web\n\n\nPlan du cours\n Pour d\u00e9finir collectivement le plan de ce cours.\n\n\n\n\nConcevoir du contenu\n\n\n\n\nSite Web\n\n\nGithub\n sera notre outil commun de gestion de code.\n\n\nCe site est propos\u00e9 en tant que [d\u00e9p\u00f4t sur Githubhttps://explorweb.github.io/cours2018/)",
+            "title": "D\u00e9finir le contenu"
+        },
+        {
+            "location": "/contribuer/contenu/#comment-contribuer-a-ce-cours",
+            "text": "",
+            "title": "Comment contribuer \u00e0 ce cours"
+        },
+        {
+            "location": "/contribuer/contenu/#reflechir-ensemble-au-contenu",
+            "text": "Prise de notes partag\u00e9es \nIl existe maintenant de nombreux outils qui permettent l'\u00e9dition partag\u00e9e. A vous de d\u00e9couvrir ceux qui vous seront utlies. Nous proposons quelques espaces pour d\u00e9marrer.  Quelle exploration du Web  Un espace pour \u00e9changer sur ce que vous attendez, avec  HackMD  un \u00e9diteur MD collaboratif en ligne;  Rapport d'\u00e9tonnement  pour noter tout ce qui vous \u00e9tonne, vous intrigue, vous donne envie d'aller plus loin sur le web  Plan du cours  Pour d\u00e9finir collectivement le plan de ce cours.",
+            "title": "R\u00e9fl\u00e9chir ensemble au contenu"
+        },
+        {
+            "location": "/contribuer/contenu/#concevoir-du-contenu",
+            "text": "Site Web  Github  sera notre outil commun de gestion de code.  Ce site est propos\u00e9 en tant que [d\u00e9p\u00f4t sur Githubhttps://explorweb.github.io/cours2018/)",
+            "title": "Concevoir du contenu"
+        },
+        {
+            "location": "/contribuer/outils/",
+            "text": "Outils utilis\u00e9s\n\n\n\n\nMarkdown comme format de base\n\n\nHackMD pour l'\u00e9dition collaborative\n\n\n\n\nHuit.re comme raccourcisseur d'URLs\n\n\n\n\n\n\nMkDocs pour g\u00e9n\u00e9rer un site propre\n\n\n\n\nGithub\n sera notre outil commun la gestion des pages du cours\n\n\nGithub Pages pour la publication directe du cours\n\n\n\n\nTravis CI pour l'automatisation du d\u00e9ploiement\n\n\n\n\n\n\nChacun pourra proposer les outils qu'il consid\u00e8re comme utile pour construire le contenu de ce cours.",
+            "title": "Les outils utilis\u00e9s"
+        },
+        {
+            "location": "/contribuer/outils/#outils-utilises",
+            "text": "Markdown comme format de base  HackMD pour l'\u00e9dition collaborative   Huit.re comme raccourcisseur d'URLs    MkDocs pour g\u00e9n\u00e9rer un site propre   Github  sera notre outil commun la gestion des pages du cours  Github Pages pour la publication directe du cours   Travis CI pour l'automatisation du d\u00e9ploiement    Chacun pourra proposer les outils qu'il consid\u00e8re comme utile pour construire le contenu de ce cours.",
+            "title": "Outils utilis\u00e9s"
+        },
+        {
+            "location": "/contribuer/comment/",
+            "text": "Tutorial pour contribuer\n\n\ngit clone https://github.com/explorweb/cours2018A.git\n ou \ngit checkout\n pour cr\u00e9er une branche\n\n\nmkdocs new cours2018A/\ncd cours2018A\n\n\nmkdocs serve\n\n\n\n\najouter son contenu\n\n\nmettre \u00e0 jour le fichier de configuration \u00e0 la racine : mkdocs.yml\n\n\n\n\net plus bas\n\n\nWelcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Comment contribuer"
+        },
+        {
+            "location": "/contribuer/comment/#tutorial-pour-contribuer",
+            "text": "git clone https://github.com/explorweb/cours2018A.git  ou  git checkout  pour cr\u00e9er une branche  mkdocs new cours2018A/\ncd cours2018A  mkdocs serve   ajouter son contenu  mettre \u00e0 jour le fichier de configuration \u00e0 la racine : mkdocs.yml",
+            "title": "Tutorial pour contribuer"
+        },
+        {
+            "location": "/contribuer/comment/#et-plus-bas",
+            "text": "",
+            "title": "et plus bas"
+        },
+        {
+            "location": "/contribuer/comment/#welcome-to-mkdocs",
+            "text": "For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/contribuer/comment/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/contribuer/comment/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/deroule/seance1/",
+            "text": "",
+            "title": "S\u00e9ance 1"
+        },
+        {
+            "location": "/deroule/seance2/",
+            "text": "",
+            "title": "S\u00e9ance 2"
+        },
+        {
+            "location": "/about/about/",
+            "text": "Un cours \u00e9lectif de IMT Atlantique sour licence Creative Commons by SA",
+            "title": "A propos"
+        },
+        {
+            "location": "/about/about/#un-cours-electif-de-imt-atlantique-sour-licence-creative-commons-by-sa",
+            "text": "",
+            "title": "Un cours \u00e9lectif de IMT Atlantique sour licence Creative Commons by SA"
+        }
+    ]
+}
