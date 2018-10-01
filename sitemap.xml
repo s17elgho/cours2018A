@@ -26,13 +26,19 @@
     </url>
         
     <url>
-     <loc>/contribuer/outils/</loc>
+     <loc>/contribuer/realiser/</loc>
      <lastmod>2018-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/contribuer/comment/</loc>
+     <loc>/contribuer/progresser/</loc>
+     <lastmod>2018-10-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contribuer/outils/</loc>
      <lastmod>2018-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url>

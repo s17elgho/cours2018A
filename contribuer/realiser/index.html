@@ -8,7 +8,7 @@
         <meta name="author" content="Etudiants participant au cours.">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Comment contribuer - Exploration du Web</title>
+        <title>Comment réaliser du contenu - Exploration du Web</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -59,12 +59,16 @@
     <a href="../contenu/">Définir le contenu</a>
 </li>
                             
-<li >
-    <a href="../outils/">Les outils utilisés</a>
+<li class="active">
+    <a href="./">Comment réaliser du contenu</a>
 </li>
                             
-<li class="active">
-    <a href="./">Comment contribuer</a>
+<li >
+    <a href="../progresser/">Comment progresser</a>
+</li>
+                            
+<li >
+    <a href="../outils/">Les outils utilisés</a>
 </li>
                         </ul>
                     </li>
@@ -93,12 +97,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../outils/">
+                        <a rel="next" href="../contenu/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../deroule/seance1/">
+                        <a rel="prev" href="../progresser/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -110,7 +114,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#tutorial-pour-contribuer">Tutorial pour contribuer</a></li>
+        <li class="main active"><a href="#tutorial-pour-realiser-du-contenu">Tutorial pour réaliser du contenu</a></li>
             <li><a href="#et-plus-bas">et plus bas</a></li>
         <li class="main "><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
             <li><a href="#commands">Commands</a></li>
@@ -119,8 +123,11 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="tutorial-pour-contribuer">Tutorial pour contribuer</h2>
-<p><code>git clone https://github.com/explorweb/cours2018A.git</code> ou <code>git checkout</code> pour créer une branche</p>
+<h2 id="tutorial-pour-realiser-du-contenu">Tutorial pour réaliser du contenu</h2>
+<p><strong>Site Web</strong>
+  * <a href="https://github.com/">Github</a> sera notre outil commun de gestion de code.
+  * Ce site est proposé en tant que <a href="https://explorweb.github.io/cours2018A/">dépôt sur Github</a>
+<code>git clone https://github.com/explorweb/cours2018A.git</code> ou <code>git checkout</code> pour créer une branche</p>
 <p>mkdocs new cours2018A/
 cd cours2018A</p>
 <p>mkdocs serve</p>
@@ -135,7 +142,9 @@ cd cours2018A</p>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
 <li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li>set the site on <code>http:\\localhost:8000</code> or evenly on <code>http:\\127.0.0.1:8000</code></li>
 <li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs gh-deploy</code> - Deploy the site</li>
 <li><code>mkdocs help</code> - Print this help message.</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
