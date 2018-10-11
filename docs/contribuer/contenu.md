@@ -4,27 +4,29 @@
 
 * **Prise de notes partagées**
 Il existe maintenant de nombreux outils qui permettent l'édition partagée. A vous de découvrir ceux qui vous seront utlies. Nous proposons quelques espaces pour démarrer.
-  * [Quelle exploration du Web](https://huit.re/ExplorWeb) Un espace pour échanger sur ce que vous attendez, avec [HackMD](https://hackmd.io/) un éditeur MD collaboratif en ligne;
-  * [Rapport d'étonnement](https://hackmd.io/7ci1qnBGRpq5afszat8Vmg?both) pour noter tout ce qui vous étonne, vous intrigue, vous donne envie d'aller plus loin sur le web
-  * [Plan du cours](https://hackmd.io/ePD9dkhSR5qG-K9s3r8guw?both) Pour définir collectivement le plan de ce cours.
+* [Quelle exploration du Web](https://huit.re/ExplorWeb) Un espace pour échanger sur ce que vous attendez, avec [HackMD](https://hackmd.io/) un éditeur MD collaboratif en ligne;
+* [Discussion : qu'est ce que le Web](https://hackmd.io/gwoPxE-mQjyQOnf4KeOTJw) et que cherchez vous dans ce cours
+* [Premières ressources](https://hackmd.io/EOPgJ9y2QdWfypPkweeAjQ?both)
+* [Rapport d'étonnement](https://hackmd.io/7ci1qnBGRpq5afszat8Vmg?both) pour noter tout ce qui vous étonne, vous intrigue, vous donne envie d'aller plus loin sur le web
+* [Plan collectif du cours](https://hackmd.io/ePD9dkhSR5qG-K9s3r8guw?both) Pour définir collectivement le plan de ce cours.
 
 ## Partager des ressources
 
-
 ## Définir un contenu qui permette à d'autres d'apprendre
-Sur le modèle du QQOQQCCP, posez vous quelques questions
+
+Sur le modèle du QQOQQCCP, posez vous quelques questions :
+
 * Quel public ?
 * Quels Objectifs ?
 * Quels concepts clés ?
 * quels supports ? page web, vidéo, streaming, exercices, projets, ...
 * Quels sont les points difficiles, et comment les aborder ?
-  * exemples, analogies  
-  * compléments
-  * détails ?
+    (exemples, analogies, compléments, détails ...)
 * Quelles pratiques faut-il réaliser ? Dans quel objectif ? pour la compréhension ? pour pouvoir le refaire ?
 
 **N'oubliez pas**
-* De mettre des liens quand nécessire
+
+* De mettre des liens quand nécessaire
 * De référencer vos sources
 * De vous assurer que vous avez les droits de reproduction éventuels (nous publions en licence CC-by-SA-4.0)
 
