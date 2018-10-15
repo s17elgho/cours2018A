@@ -33,10 +33,16 @@ Il existe maintenant de nombreux outils qui permettent l'édition partagée. A v
   * [Quelle exploration du Web](https://huit.re/explorweb) Un espace pour échanger sur ce que vous attendez, avec [HackMD](https://hackmd.io/) un éditeur MD collaboratif en ligne;
 
 # Support de cours
+## introduction
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/nNUgizR6I3FFpP" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
   [Explorweb introduction 2018](//www.slideshare.net/jm.gilliot/explorweb-introduction-2018-92778235)
+
+## quelques concepts
+  <iframe src="//www.slideshare.net/slideshow/embed_code/key/LKk4MBcsuiEgqI" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+  [ ExplorWeb quelques concepts pour bien démarrer](https://www.slideshare.net/jm.gilliot/explorweb-quelques-concepts-automne-2018)
+## bonus
 
   Un autre diaporama à titre d'information, sur les changements en éducation liés au Web
   <iframe src="//www.slideshare.net/slideshow/embed_code/key/1JFQv8Q6bi87NU" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
