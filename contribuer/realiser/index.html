@@ -116,45 +116,54 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#tutorial-pour-realiser-du-contenu">Tutorial pour réaliser du contenu</a></li>
-            <li><a href="#et-plus-bas">et plus bas</a></li>
-        <li class="main "><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
-            <li><a href="#commands">Commands</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
+        <li class="main active"><a href="#elements-pour-realiser-du-contenu">éléments pour réaliser du contenu</a></li>
+            <li><a href="#recuperer-le-source-du-site-web-et-ameliorez-le">Récupérer le source du Site Web et améliorez le</a></li>
+        <li class="main "><a href="#comprendre-les-principes-de-publication-retenus">Comprendre les principes de publication retenus</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="tutorial-pour-realiser-du-contenu">Tutorial pour réaliser du contenu</h2>
-<p><strong>Site Web</strong>
-  * <a href="https://github.com/">Github</a> sera notre outil commun de gestion de code.
-  * Ce site est proposé en tant que <a href="https://explorweb.github.io/cours2018A/">dépôt sur Github</a>
-<code>git clone https://github.com/explorweb/cours2018A.git</code> ou <code>git checkout</code> pour créer une branche</p>
-<p>mkdocs new cours2018A/
-cd cours2018A</p>
-<p>mkdocs serve</p>
+<h1 id="elements-pour-realiser-du-contenu">éléments pour réaliser du contenu</h1>
+<h2 id="recuperer-le-source-du-site-web-et-ameliorez-le">Récupérer le source du Site Web et améliorez le</h2>
 <ul>
-<li>ajouter son contenu</li>
-<li>mettre à jour le fichier de configuration à la racine : mkdocs.yml</li>
+<li><a href="https://github.com/">Github</a> sera notre outil commun de gestion de code.</li>
+<li>Ce site est proposé en tant que <a href="https://github.com/explorweb/cours2018A">dépôt sur Github</a></li>
+<li>Commencez par trouver et suivre un tutorial de prise en main de git et de Github</li>
+<li>Pour travailler dans le cadre du cours, il vous faudra :<ul>
+<li>savoir travailler sur des dépôts sur l'espace local d'un ordinateur. Vous pouvez utiliser le mode ligne ou un outil comme Github Desktop ;</li>
+<li>savoir créer des branches ( fork ) du dépôt principal du cours, et proposer vos ajouts (Pull request) ;</li>
 </ul>
-<h3 id="et-plus-bas">et plus bas</h3>
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+</li>
+<li>Créer une branche ou une copie personnelle pour travailler</li>
+<li>Pour l'instant, vous ne pouvez pas directement modifier la branche principale, Vous devez donc effectuer des <code>Pull request</code> qui seront analysées par l'enseignant.</li>
+</ul>
+<p><strong><em>Un mode d'emploi simplifié sera le bienvenu.</em></strong></p>
+<h1 id="comprendre-les-principes-de-publication-retenus">Comprendre les principes de publication retenus</h1>
+<p>Le site web du cours est ce qu'on appelle un site statique. Une arborescence de documents sources et de documents de forme est développée et "compilée" par un outil de traduction en une arborescence de fichiers html, css et autres directement consultable par un navigateur.</p>
+<p>Les <a href="https://pages.github.com/">Github pages</a> proposent à la fois :</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li>set the site on <code>http:\\localhost:8000</code> or evenly on <code>http:\\127.0.0.1:8000</code></li>
+<li>un outil de génération par défaut [Jekyll] (https://jekyllrb.com/)</li>
+<li>la publication sur le web au travers d'une url correspondant à votre projet
+Et bien plus encore, mais cela suffit dans un premier temps.</li>
+</ul>
+<p>Dans notre cas, nous utilisons un outil de génération différent <a href="http://mkdocs.org">mkdocs.org</a> mais nous utiliserons le même mécanisme de publication en mettant à disposition le résultat de la génération sur  une branche dédié <code>https://github.com/explorweb/cours2018A/tree/gh-pages</code></p>
+<p>Vous pouvez tester localement la mise en page de vos écrits en installant mkdocs sur votre PC. Le tutorial proposé est simple et efficace.</p>
+<p>Les commandes principales de mkdocs sont :</p>
+<ul>
+<li>pour l'initialisation d'un répertoire  <code>mkdocs new [dir-name]</code>. Faire cela avant de récupérer un dépôt local de votre branche dans le répertoire choisi.</li>
+<li>aller dans le répertoire en question <code>cd [dir-name]</code></li>
+<li><code>mkdocs serve</code> démarre un serveur 'live' local sur votre machine qui se mettra à jour au fur et à mesure que vous modifierez le contenu</li>
+</ul>
+<p>Si vous ajoutez une page sur le site :</p>
+<ul>
+<li>Créer un document dans le bon répertoire (<em>a priori</em> <code>docs/cours</code>)  et le compléter.    </li>
+<li>Mettre à jour le fichier de configuration à la racine <code>mkdocs.yml</code> pour positionner votre page sur le site.</li>
+</ul>
+<p>Lorsque les modifications seront acceptées sur la branche principale, la personne qui acceptera vos modifications effectuera les commandes suivantes pour déployer le site :</p>
+<ul>
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs gh-deploy</code> - Deploy the site</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
