@@ -8,7 +8,7 @@
         <meta name="author" content="Etudiants participant au cours.">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Comment réaliser du contenu - Exploration du Web</title>
+        <title>Séance 4 - Exploration du Web</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -53,45 +53,45 @@
                             <li >
                                 <a href="../../cours/">Cours</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribuer <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../contenu/">Définir le contenu</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">Comment réaliser du contenu</a>
+    <a href="../../contribuer/contenu/">Définir le contenu</a>
 </li>
                                     
 <li >
-    <a href="../progresser/">Comment progresser</a>
+    <a href="../../contribuer/realiser/">Comment réaliser du contenu</a>
 </li>
                                     
 <li >
-    <a href="../outils/">Les outils utilisés</a>
+    <a href="../../contribuer/progresser/">Comment progresser</a>
+</li>
+                                    
+<li >
+    <a href="../../contribuer/outils/">Les outils utilisés</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Déroulé <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../deroule/seance1/">Séance 1</a>
+    <a href="../seance1/">Séance 1</a>
 </li>
                                     
 <li >
-    <a href="../../deroule/seance2/">Séance 2</a>
+    <a href="../seance2/">Séance 2</a>
 </li>
                                     
 <li >
-    <a href="../../deroule/seance3/">Séance 3</a>
+    <a href="../seance3/">Séance 3</a>
 </li>
                                     
-<li >
-    <a href="../../deroule/seance4/">Séance 4</a>
+<li class="active">
+    <a href="./">Séance 4</a>
 </li>
                                 </ul>
                             </li>
@@ -107,12 +107,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../contenu/">
+                                <a rel="next" href="../seance3/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../progresser/">
+                                <a rel="prev" href="../../about/about/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -124,53 +124,18 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#elements-pour-realiser-du-contenu">éléments pour réaliser du contenu</a></li>
-            <li><a href="#recuperer-le-source-du-site-web-et-ameliorez-le">Récupérer le source du Site Web et améliorez le</a></li>
-        <li class="main "><a href="#comprendre-les-principes-de-publication-retenus">Comprendre les principes de publication retenus</a></li>
+        <li class="main active"><a href="#premiers-contenus-exploration-du-web-elu-525-seance-4">Premiers contenus "Exploration du Web" - ELU 525 séance 4</a></li>
+            <li><a href="#contenu-de-la-seance">Contenu de la séance</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="elements-pour-realiser-du-contenu">éléments pour réaliser du contenu</h1>
-<h2 id="recuperer-le-source-du-site-web-et-ameliorez-le">Récupérer le source du Site Web et améliorez le</h2>
+<h1 id="premiers-contenus-exploration-du-web-elu-525-seance-4">Premiers contenus "Exploration du Web" - ELU 525 séance 4</h1>
+<h2 id="contenu-de-la-seance">Contenu de la séance</h2>
+<h3 id="finalisation-dune-premiere-version-de-contenu">Finalisation d'une première version de contenu</h3>
 <ul>
-<li><a href="https://github.com/">Github</a> sera notre outil commun de gestion de code.</li>
-<li>Ce site est proposé en tant que <a href="https://github.com/explorweb/cours2018A">dépôt sur Github</a></li>
-<li>Commencez par trouver et suivre un tutorial de prise en main de git et de Github</li>
-<li>Pour travailler dans le cadre du cours, il vous faudra :<ul>
-<li>savoir travailler sur des dépôts sur l'espace local d'un ordinateur. Vous pouvez utiliser le mode ligne ou un outil comme Github Desktop ;</li>
-<li>savoir créer des branches ( fork ) du dépôt principal du cours, et proposer vos ajouts (Pull request) ;</li>
-</ul>
-</li>
-<li>Créer une branche ou une copie personnelle pour travailler</li>
-<li>Pour l'instant, vous ne pouvez pas directement modifier la branche principale, Vous devez donc effectuer des <code>Pull request</code> qui seront analysées par l'enseignant.</li>
-</ul>
-<p><strong><em>Un mode d'emploi simplifié sera le bienvenu.</em></strong></p>
-<h1 id="comprendre-les-principes-de-publication-retenus">Comprendre les principes de publication retenus</h1>
-<p>Le site web du cours est ce qu'on appelle un site statique. Une arborescence de documents sources et de documents de forme est développée et "compilée" par un outil de traduction en une arborescence de fichiers html, css et autres directement consultable par un navigateur.</p>
-<p>Les <a href="https://pages.github.com/">Github pages</a> proposent à la fois :</p>
-<ul>
-<li>un outil de génération par défaut [Jekyll] (https://jekyllrb.com/)</li>
-<li>la publication sur le web au travers d'une url correspondant à votre projet
-Et bien plus encore, mais cela suffit dans un premier temps.</li>
-</ul>
-<p>Dans notre cas, nous utilisons un outil de génération différent <a href="http://mkdocs.org">mkdocs.org</a> mais nous utiliserons le même mécanisme de publication en mettant à disposition le résultat de la génération sur  une branche dédié <code>https://github.com/explorweb/cours2018A/tree/gh-pages</code></p>
-<p>Vous pouvez tester localement la mise en page de vos écrits en installant mkdocs sur votre PC. Le tutorial proposé est simple et efficace.</p>
-<p>Les commandes principales de mkdocs sont :</p>
-<ul>
-<li>pour l'initialisation d'un répertoire  <code>mkdocs new [dir-name]</code>. Faire cela avant de récupérer un dépôt local de votre branche dans le répertoire choisi.</li>
-<li>aller dans le répertoire en question <code>cd [dir-name]</code></li>
-<li><code>mkdocs serve</code> démarre un serveur 'live' local sur votre machine qui se mettra à jour au fur et à mesure que vous modifierez le contenu</li>
-</ul>
-<p>Si vous ajoutez une page sur le site :</p>
-<ul>
-<li>Créer un document dans le bon répertoire (<em>a priori</em> <code>docs/cours</code>)  et le compléter.    </li>
-<li>Mettre à jour le fichier de configuration à la racine <code>mkdocs.yml</code> pour positionner votre page sur le site.</li>
-</ul>
-<p>Lorsque les modifications seront acceptées sur la branche principale, la personne qui acceptera vos modifications effectuera les commandes suivantes pour déployer le site :</p>
-<ul>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs gh-deploy</code> - Deploy the site</li>
+<li>Vous présenterez aux autres groupes en 1 ou 2 écrans ce qu'ils pourront apprendre dans votre cours.</li>
+<li>Vous finaliserez les contenus, les activités et l'évaluation de votre cours</li>
 </ul></div>
         </div>
 
