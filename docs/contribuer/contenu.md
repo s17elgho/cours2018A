@@ -32,6 +32,7 @@ Sur le modèle du QQOQQCCP, posez vous quelques questions :
 
 
 ## Faites valider votre approche
+* En exprimant vos réponses aux question précédentes sous forme d'un résumé synthétique à destination de votre public
 * En la comparant avec l'existant
 * Avec vos pairs
 

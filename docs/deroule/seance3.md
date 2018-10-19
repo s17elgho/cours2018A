@@ -1,6 +1,7 @@
 # Premiers contenus "Exploration du Web" - ELU 525 séance 3
 
 ## Contenu de la séance
+### Validation des éléments de contenu visés
 ### Premières production de contenu
 * Selon le modèle de contribution que vous avez retenu ou selon [celui défini *a priori*](../../contribuer/contenu/), construire en petits groupes des premiers éléments du cours.
   * Pensez à solliciter régulièrement les autres groupes
