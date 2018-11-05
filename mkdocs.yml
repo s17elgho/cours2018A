@@ -1,7 +1,7 @@
 site_name: Exploration du Web
 site_description: Cours participatif sur le Web.
 site_author: Etudiants participant au cours.
-pages:
+nav:
   - Home: index.md
   - Cours: cours/index.md
   - Contribuer:
@@ -14,6 +14,7 @@ pages:
       - Séance 2: deroule/seance2.md
       - Séance 3: deroule/seance3.md
       - Séance 4: deroule/seance4.md
+      - Séance 5: deroule/seance5.md
 
   - A propos: about/about.md
 
