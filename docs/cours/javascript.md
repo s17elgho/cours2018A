@@ -253,3 +253,132 @@ Considérons maintenant un exemple un peu plus complet.
             <script src="../js/cours.js"></script>
         </body>
     </html>
+
+    ## Alternance de deux images 
+
+- Créer une page html5 contenant une image.
+- Programmer en JavaScript une alternance entre cette image et une autre, toutes les deux secondes.
+- Ajouter un bouton et le code JavaScript associé pour arrêter ce défilement.
+- Ajouter un bouton et le code JavaScript associé pour le reprendre
+```
+1: <!DOCTYPE html>
+2: <html lang="fr">
+3: <head>
+4: <title>Actions utilisateur et JavaScript</title>
+5: <meta charset="utf-8" />
+6: <link rel="stylesheet" href="idemm.css" />
+7: <script>
+8: var alecran = 'unchat';
+9: function diaporama () {
+10:   if (alecran == 'unchat') {
+11:     document.getElementById('diapo').setAttribute('src','images/chien.jpg');
+12:     alecran = 'unchien';
+13:   } else {
+14:     document.getElementById('diapo').setAttribute('src','images/chat.jpg');
+15:     alecran = 'unchat';
+16:   }
+17: }
+18: </script>
+19: </head>
+20: 
+21: <body onload="chienchat = setInterval('diaporama();',2000);">
+22: 
+23: <h1>Actions utilisateur et JavaScript</h1>
+24: 
+25: <h2>Diaporama automatique</h2>
+26: 
+27: <div class="illustration">
+28: <img id="diapo" src="images/chat.jpg" alt="un chat" height="200" />
+29: </div>
+30: 
+31: <button onclick="clearInterval(chienchat);">stop!</button>
+32: 
+33: <button onclick="chienchat = setInterval('diaporama();',2000);">on y retourne!</button>
+34: 
+35: 
+36: </body>
+37: </html>
+```
+Vous y trouverez la démonstration au lien suivant: [[Démo]](https://huit.re/correction-code-source-alternance-de-deux-images)
+Seul le code JavaScript sera commenté.Pour le code Html voir [cours Html](https://) 
+```
+<script>
+8: var alecran = 'unchat';
+...
+
+18: </script>
+```
+Nous commencons par la déclaration d'une variable qui pour nom alecran et pour valeur la chaine de caractère 'unchat'.  
+```
+<script>
+...
+
+9: function diaporama () {
+10:   if (alecran == 'unchat') {
+11:     document.getElementById('diapo').setAttribute('src','images/chien.jpg');
+12:     alecran = 'unchien';
+13:   } else {
+14:     document.getElementById('diapo').setAttribute('src','images/chat.jpg');
+15:     alecran = 'unchat';
+16:   }
+17: }
+18: </script>
+```
+Il s'agit d'une fonction diaporama() comme vous pouvez le constater. si l'objet alecran prend la valeur 'unchat' alors on récupère l'élément identifié par 'diapo' et l'aide de setAttribute('src','images/chien.jpg') nous pourrions afficher l'image du chien qui est sur le lien 'images/chien.jpg'. Nous avons le procéssus inverse lorsque alecran prend la valeur 'unchien'.
+## Diaporama
+- Placer des noms d'images dans un tableau JavaScript.
+- Programmer l'affichage une par une de ces images dirigés par deux boutons, un précédent, un suivant
+```
+1: <!DOCTYPE html>
+2: <html lang="fr">
+3: <head>
+4: <title>Actions utilisateur et JavaScript</title>
+5: <meta charset="utf-8" />
+6: <link rel="stylesheet" href="idemm.css" />
+7: <script>
+8: var mesphotos = ['chat.jpg','chien.jpg','sanglier.jpg','lapin.jpg'];
+9: var image_en_cours = 0;
+10: function suivante () {
+11:   image_en_cours = image_en_cours + 1;
+12:   if (image_en_cours == mesphotos.length) {
+13:     image_en_cours = 0;
+14:   }
+15:   document.getElementById('ecran').src = 'images/'+mesphotos[image_en_cours];
+16: }
+17: function precedente () {
+18:   image_en_cours = image_en_cours - 1;
+19:   if (image_en_cours < 0) {
+20:     image_en_cours = mesphotos.length-1;
+21:   }
+22:   document.getElementById('ecran').src = 'images/'+mesphotos[image_en_cours];
+23: }
+24: </script>
+25: </head>
+26: 
+27: <body>
+28: 
+29: <h1>Actions utilisateur et JavaScript</h1>
+30: 
+31: <h2>Diaporama manuel</h2>
+32: 
+33: <div class="illustration">
+34: <img id="ecran" src="images/chat.jpg" alt="un chat" height="200" />
+35: </div>
+36: 
+37: <button onclick="precedente();">image précédente</button>
+38: <button onclick="suivante();">image suivante</button>
+39: 
+40: </body>
+41: </html>
+42: 
+```
+Vous y trouverez la démonstration au lien suivant: [Démo](https://huit.re/diaporama-demo)
+
+NB: il y aucune différence entre ``document.getElementById('ecran').src="" `` et ``document.getElementById('diapo').setAttribute('src','images/chat.jpg');``, ils ont tous les deux le même rôle. Le ".src=" est une mannière plus simple d'écrire le .setAttribute("","")".
+
+# À VOUS DE JOUER
+
+Dans cette partie il sera question de faire un script en JavaScript qui permettra de défiler chaque 5 secondes des images(au moins 5 images contenues dans un tableau). 
+
+- Placer des noms d’images dans un tableau JavaScript
+- Programmer l’affichage une par une de ces images qui apparaîtront les unes à suite des autres chaque 5 secondes.
