@@ -165,3 +165,91 @@ Cela ressemble beaucoup au constructeur Personne mais il y a quelque chose que n
 Nous voulons que le constructeur Professeur() aie les mêmes attributs que Personne(), nous les spécifions donc dans l'appel fait via la fonction call().
 
 La dernière ligne au sein du constructeur sert simplement à définir l'attribut matière que les professeurs enseignent, ce qui n'est pas valable pour les personnes génériques.
+
+# Utilisation du DOM
+
+La variable la plus important quand on veut utiliser le DOM,  c'est `document`. Elle designe la balise `<html>` qui est la racine du document. Voyons dans un premier temps des méthodes utiles, puis ensuite leur utilisation.
+
+L'accès aux balises `<head>`et `<body>` depuis le DOM est un peu à part. Il suffit simplement de taper `document.head` et `document.body`.
+
+Prenons comme exmple le code HTML suivant :
+
+    <!doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Ma page web</title>
+        </head>
+        <body>
+            <h1>Ma page web</h1>
+            <p>Bonjour, je m'appelle Baptiste.</p>
+            <p>J'habite dans la belle ville de <a href="http://www.lyon.fr">Lyon</a>.</p>
+        </body>
+    </html>
+    
+Le DOM de ce code peut être représenté de façon hiérarchisé sous la forme d'un arbre.
+
+![Représentation sous forme d'arbre de la page WEB d'exemple](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/DOM1.DOM "Représentation sous forme d'arbre de la page WEB d'exemple")
+
+## Parcours initial
+
+Il est possible d'accéder à tous les noeuds avec les méthodes `childNodes` et `parentNode` qui renvoient, respectivement, un tableau contenant les noeuds fils et le noeud parent d'un noeud choisi. Il est donc théoriquement possible d'accèder à n'importe quel élément de la page depuis la racine avec ces deux méthodes.
+
+Ainsi, si on reprends l'exemple vu plus haut, pour accèder à la balise `<a>`contenue dans le dernier noeud `<p>`, il faudrait écrire `document.body.childNodes[5].childNodes[1]`. Il y a cependant quelque chose à bien noter. Pour accéder au noeud `<p>`, on a accedé au 6ème élement de la liste des enfants de `body` (`document.body.childNodes[5]`, la numérotation commencant à 0) et non le troisième comme on aurait pu le supposer avec la vue du document sous forme d'arbre. Ceci est dû aux retours à la ligne présent dans le document HTML. En effet ils sont considérés par le DOM comme des noeuds textuels, et donc rentrent en compte dans la liste des noeuds fils.
+
+Cette méthode d'accès a cependant des gros défauts. En effet elle est sensible à la structure de la page HTML, ce qui veut dire que si on rajoute un élément, on va devoir modifier les index utilisés pour récupérer tel ou tel élément. Ensuite elle manque de lisibilité. En effet, avec `document.body.childNodes[5]` on a accedé à une balise `<p>`, mais ce n'est pas forcément évident de savoir ce qu'on récupère. Et puis supposons que l'on souhaite récupérer toutes les balises `<p>`, c'est pas très évident à faire avec cette méthode.
+
+Pour ce faire, d'autres méthodes de sélection d'élements existent.
+
+## Parcours plus précis
+
+Plusieurs méthodes existent pour permettre de sélectionner de manière plus fine et plus précise :
+- `getElementsByTagName` permet de selectionner tous les éléments d'un même tag, par exemple tous les titres de niveau 2 avec `document.getElementsByTagName("h2")`,
+- `getElementsByClassName` permet de selectionner tous les éléments d'un possèdant la même classe CSS, par exemple tous les éléments possédant la classe `gras` avec `document.getElementsByClassName("gras")`,
+- `getElementById` permet de selectionner le premier élément qui possède l'identifiant CSS, par exemple l'élément identifié par `photoProfil` avec `document.getElementById("photoProfil")`,
+- `querySelectorAll` permet de sélectionner tous les éléments qui suivent un sélecteur CSS, par exemple tous les éléments de paragraphe qui ont la classe italique avec `document.querySelectorAll("p.italique")`,
+- `querySelector` fonctionne de la même manière que `querySelectorAll` à ceci près qu'il renvoie uniquement le premier élément correspondant au selecteur CSS
+
+Considérons maintenant un exemple un peu plus complet.
+
+    <!doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Les sept merveilles du monde</title>
+        </head>
+        <body>
+            <h1>Les sept merveilles du monde</h1>
+            <p>Connaissez-vous les merveilles du monde ?</p>
+            <div id="contenu">
+                <h2>Merveilles du monde antique</h2>
+                <p>Cette liste nous vient de l'Antiquité.</p>
+                <ul class="merveilles" id="antiques">
+                    <li class="existe">La pyramide de Khéops</li>
+                    <li>Les jardins suspendus de Babylone</li>
+                    <li>La statue de Zeus</li>
+                    <li>Le temple d'Artémis</li>
+                    <li>Le mausolée d'Halicarnasse</li>
+                    <li>Le Colosse de Rhodes</li>
+                    <li>Le phare d'Alexandrie</li>
+                </ul>
+                <h2>Nouvelles merveilles du monde</h2>
+                <p>Cette liste a été établie en 2009 à la suite d'un vote par Internet.</p>
+                <ul class="merveilles" id="nouvelles">
+                    <li class="existe">La Grande Muraille de Chine</li>
+                    <li class="existe">Pétra</li>
+                    <Li class="existe">Le Christ du Corcovado</Li>
+                    <Li class="existe">Machu Picchu</Li>
+                    <li class="existe">Chichén Itzá</li>
+                    <li class="existe">Le Colisée</li>
+                    <li class="existe">Le Taj Mahal</li>
+                </ul>
+                <h2>Références</h2>
+                <ul>
+                    <li><a href="https://fr.wikipedia.org/wiki/Sept_merveilles_du_monde">Merveilles antiques</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Sept_nouvelles_merveilles_du_monde">Nouvelles merveilles</a></li>
+                </ul>
+            </div>
+            <script src="../js/cours.js"></script>
+        </body>
+    </html>
