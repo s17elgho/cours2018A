@@ -254,7 +254,7 @@ Considérons maintenant un exemple un peu plus complet.
         </body>
     </html>
 
-    ## Alternance de deux images 
+## Alternance de deux images 
 
 - Créer une page html5 contenant une image.
 - Programmer en JavaScript une alternance entre cette image et une autre, toutes les deux secondes.
@@ -299,8 +299,8 @@ Considérons maintenant un exemple un peu plus complet.
 36: </body>
 37: </html>
 ```
-Vous y trouverez la démonstration au lien suivant: [[Démo]](https://huit.re/correction-code-source-alternance-de-deux-images)
-Seul le code JavaScript sera commenté.Pour le code Html voir [cours Html](https://) 
+Vous y trouverez la démonstration au lien suivant: [[Démo]](http://www.grappa.univ-lille3.fr/~torre/Enseignement/tp/JavaScript/seances/tp4.html)
+Seul le code JavaScript sera commenté.Pour le code Html voir cours sur HTML et CSS.
 ```
 <script>
 8: var alecran = 'unchat';
@@ -372,7 +372,7 @@ Il s'agit d'une fonction diaporama() comme vous pouvez le constater. si l'objet 
 41: </html>
 42: 
 ```
-Vous y trouverez la démonstration au lien suivant: [Démo](https://huit.re/diaporama-demo)
+Vous y trouverez la démonstration au lien suivant: [Démo](http://www.grappa.univ-lille3.fr/~torre/Enseignement/tp/JavaScript/seances/tp4bis.html)
 
 NB: il y aucune différence entre ``document.getElementById('ecran').src="" `` et ``document.getElementById('diapo').setAttribute('src','images/chat.jpg');``, ils ont tous les deux le même rôle. Le ".src=" est une mannière plus simple d'écrire le .setAttribute("","")".
 
