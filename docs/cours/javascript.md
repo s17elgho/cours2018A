@@ -10,7 +10,8 @@ Avant d'entamer ce module, vous n'avez besoin d'aucune connaissance préalable e
 JavaScript (« JS » en abrégé) est un langage de programmation dynamique complet qui, appliqué à un document HTML, peut fournir une interactivité dynamique sur les sites Web.
 
 # Rôles du HTML / CSS / JavaScript
-![](https://i.imgur.com/njTtKgC.png)
+![Rôles du HTML / CSS / JavaScript](http://vdoit.in/wp-content/uploads/2016/09/vDoIT_html-css-logo1.jpg)
+Rôles du HTML / CSS / JavaScript, source [http://vdoit.in/](http://vdoit.in/)
 
 - HTML est un langage de balisage utilisé pour structurer et donner sens au contenu web. Par exemple : définir des paragraphes, en-têtes et tables de données ou encore intégrer des images ou des vidéos dans une page.
 - CSS est un langage de règles de style utilisé pour appliquer un style au contenu HTML. Par exemple : en modifiant la couleur d’arrière-plan ou les polices, ou en disposant le contenu en plusieurs colonnes.
@@ -40,11 +41,11 @@ Le DOM a été conçu pour être indépendant de tout langage de programmation, 
 
 Une variable est un conteneur pour une valeur, tel un nombre à utiliser pour une addition, ou une chaîne devant faire partie d'une phrase. Mais un aspect spécial des variables est que les valeurs contenues peuvent changer. Voyons un exemple simple :
 
-```
+```html
 <button>Pressez moi</button>
 ```
 
-```
+```javascript
 var button = document.querySelector('button');
 
 button.onclick = function() {
@@ -57,7 +58,7 @@ Dans cet exemple, presser le bouton déclenche l'exécution de quelques lignes d
 ## Les Fonctions
 
 - Fonctions personnalisées
-```
+```javascript
 function draw() {
   ctx.clearRect(0,0,WIDTH,HEIGHT);
   for (var i = 0; i < 100; i++) {
@@ -70,18 +71,17 @@ function draw() {
 ```
 Cette fonction dessine 100 cercles aléatoires dans un élément canvas. À chaque fois que nous voulons faire cela, il suffit d'invoquer la fonction comme suit :
 
-```
+```javascript
 draw();
 ```
-- Fonctions anonymes
- vous pouvez également créer une fonction qui n'a pas de nom :
-```
+- Fonctions anonymes : vous pouvez également créer une fonction qui n'a pas de nom :
+```javascript
 function() {
   alert('hello');
 }
 ```
 Ceci est une fonction anonyme— elle n'a pas de nom ! De plus, elle ne produira pas d'effet par elle-même. Les fonctions anonymes sont généralement utilisées en association avec un gestionnaire d'évènement, comme dans l'exemple suivant qui lance le code inscrit dans la fonction lorsque le bouton associé est cliqué :
-```
+```javascript
 var myButton = document.querySelector('button');
 
 myButton.onclick = function() {
@@ -90,19 +90,19 @@ myButton.onclick = function() {
 ```
 ## Objet et héritage
 
-- Les bases de l'objet
+### Les bases de l'objet
 
 Un objet est une collection de données relatives entre elles et/ou de fonctionnalités (qui, souvent, se composent de plusieurs variables et fonctions, appelées propriétés et méthodes quand elles sont dans des objets). Prenons un exemple pour voir à quoi elles ressemblent.
 
 Comme souvent dans JavaScript, pour créer un objet, on commence avec la définition et l'initialisation d'une variable. Essayez de mettre le code ci-dessous sous le code déjà écrit de votre fichier JavaScript, puis sauvegardez et rafraichissez la page :
 
-```
+```javascript
 var personne = {};
 ```
 
 Félicitations, vous avez créé votre premier objet ! Mais c'est un objet vide, on ne peut pas faire grand-chose avec. Modifions notre objet pour qu'il ressemble à ceci :
 
-```
+```javascript
 var personne = {
   nom: ['Jean', 'Martin'],
   age: 32,
@@ -118,7 +118,7 @@ var personne = {
 ```
 Vous avez désormais des données et des fonctionnalités dans votre objet, et vous pouvez y accéder avec une une syntaxe simple et claire !
 
-```
+```javascript
 personne.nom[0]
 personne.age
 personne.interets[1]
@@ -126,10 +126,10 @@ personne.bio()
 personne.salutation()
 ```
 
-- Héritage
+### Héritage
 
 Ci-dessus vous trouverez le constructeur Personne ():
-```
+```javascript
 function Personne(prenom, nom, age, genre, interets) {
   this.nom = {
     prenom,
@@ -141,7 +141,7 @@ function Personne(prenom, nom, age, genre, interets) {
 };
 ```
 L'ensemble des méthodes est défini dans le prototype :
-```
+```javascript
 Personne.prototype.saluer = function() {
   alert('Salut! Je suis ' + this.nom.prenom + '.');
 };
@@ -153,7 +153,7 @@ Une méthode saluer un peu plus élaborée, qui sera un peu plus formelle que la
 
 La première chose à faire est de créer le constructeur Professeur() via l'ajout du code suivant :
 
-```
+```javascript
 function Professeur(prenom, nom, age, genre, interets, matiere) {
   Personne.call(this, prenom, nom, age, genre, interets);
 
@@ -173,23 +173,26 @@ La variable la plus important quand on veut utiliser le DOM,  c'est `document`. 
 L'accès aux balises `<head>`et `<body>` depuis le DOM est un peu à part. Il suffit simplement de taper `document.head` et `document.body`.
 
 Prenons comme exmple le code HTML suivant :
-
-    <!doctype html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>Ma page web</title>
-        </head>
-        <body>
-            <h1>Ma page web</h1>
-            <p>Bonjour, je m'appelle Baptiste.</p>
-            <p>J'habite dans la belle ville de <a href="http://www.lyon.fr">Lyon</a>.</p>
-        </body>
-    </html>
+```html
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ma page web</title>
+    </head>
+    <body>
+        <h1>Ma page web</h1>
+        <p>Bonjour, je m'appelle Baptiste.</p>
+        <p>J'habite dans la belle ville de <a href="http://www.lyon.fr">Lyon</a>.</p>
+    </body>
+</html>
+```
+Source [openclassrooms.com](openclassrooms.com)
     
 Le DOM de ce code peut être représenté de façon hiérarchisé sous la forme d'un arbre.
 
 ![Représentation sous forme d'arbre de la page WEB d'exemple](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/DOM1.DOM "Représentation sous forme d'arbre de la page WEB d'exemple")
+Représentation sous forme d'arbre de la page WEB d'exemple, source [openclassrooms.com](openclassrooms.com)
 
 ## Parcours initial
 
@@ -197,7 +200,7 @@ Il est possible d'accéder à tous les noeuds avec les méthodes `childNodes` et
 
 Ainsi, si on reprends l'exemple vu plus haut, pour accèder à la balise `<a>`contenue dans le dernier noeud `<p>`, il faudrait écrire `document.body.childNodes[5].childNodes[1]`. Il y a cependant quelque chose à bien noter. Pour accéder au noeud `<p>`, on a accedé au 6ème élement de la liste des enfants de `body` (`document.body.childNodes[5]`, la numérotation commencant à 0) et non le troisième comme on aurait pu le supposer avec la vue du document sous forme d'arbre. Ceci est dû aux retours à la ligne présent dans le document HTML. En effet ils sont considérés par le DOM comme des noeuds textuels, et donc rentrent en compte dans la liste des noeuds fils.
 
-Cette méthode d'accès a cependant des gros défauts. En effet elle est sensible à la structure de la page HTML, ce qui veut dire que si on rajoute un élément, on va devoir modifier les index utilisés pour récupérer tel ou tel élément. Ensuite elle manque de lisibilité. En effet, avec `document.body.childNodes[5]` on a accedé à une balise `<p>`, mais ce n'est pas forcément évident de savoir ce qu'on récupère. Et puis supposons que l'on souhaite récupérer toutes les balises `<p>`, c'est pas très évident à faire avec cette méthode.
+Cette méthode d'accès a cependant des gros défauts. En effet elle est sensible à la structure de la page HTML, ce qui veut dire que si on rajoute un élément, on va devoir modifier les index utilisés pour récupérer tel ou tel élément. Ensuite elle manque de lisibilité. En effet, avec `document.body.childNodes[5]` on a accédé à une balise `<p>`, mais ce n'est pas forcément évident de savoir ce qu'on récupère. Et puis supposons que l'on souhaite récupérer toutes les balises `<p>`, c'est pas très évident à faire avec cette méthode.
 
 Pour ce faire, d'autres méthodes de sélection d'élements existent.
 
@@ -212,169 +215,190 @@ Plusieurs méthodes existent pour permettre de sélectionner de manière plus fi
 
 Considérons maintenant un exemple un peu plus complet.
 
-    <!doctype html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>Les sept merveilles du monde</title>
-        </head>
-        <body>
-            <h1>Les sept merveilles du monde</h1>
-            <p>Connaissez-vous les merveilles du monde ?</p>
-            <div id="contenu">
-                <h2>Merveilles du monde antique</h2>
-                <p>Cette liste nous vient de l'Antiquité.</p>
-                <ul class="merveilles" id="antiques">
-                    <li class="existe">La pyramide de Khéops</li>
-                    <li>Les jardins suspendus de Babylone</li>
-                    <li>La statue de Zeus</li>
-                    <li>Le temple d'Artémis</li>
-                    <li>Le mausolée d'Halicarnasse</li>
-                    <li>Le Colosse de Rhodes</li>
-                    <li>Le phare d'Alexandrie</li>
-                </ul>
-                <h2>Nouvelles merveilles du monde</h2>
-                <p>Cette liste a été établie en 2009 à la suite d'un vote par Internet.</p>
-                <ul class="merveilles" id="nouvelles">
-                    <li class="existe">La Grande Muraille de Chine</li>
-                    <li class="existe">Pétra</li>
-                    <Li class="existe">Le Christ du Corcovado</Li>
-                    <Li class="existe">Machu Picchu</Li>
-                    <li class="existe">Chichén Itzá</li>
-                    <li class="existe">Le Colisée</li>
-                    <li class="existe">Le Taj Mahal</li>
-                </ul>
-                <h2>Références</h2>
-                <ul>
-                    <li><a href="https://fr.wikipedia.org/wiki/Sept_merveilles_du_monde">Merveilles antiques</a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/Sept_nouvelles_merveilles_du_monde">Nouvelles merveilles</a></li>
-                </ul>
-            </div>
-            <script src="../js/cours.js"></script>
-        </body>
-    </html>
+```html
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Les sept merveilles du monde</title>
+    </head>
+    <body>
+        <h1>Les sept merveilles du monde</h1>
+        <p>Connaissez-vous les merveilles du monde ?</p>
+        <div id="contenu">
+            <h2>Merveilles du monde antique</h2>
+            <p>Cette liste nous vient de l'Antiquité.</p>
+            <ul class="merveilles" id="antiques">
+                <li class="existe">La pyramide de Khéops</li>
+                <li>Les jardins suspendus de Babylone</li>
+                <li>La statue de Zeus</li>
+                <li>Le temple d'Artémis</li>
+                <li>Le mausolée d'Halicarnasse</li>
+                <li>Le Colosse de Rhodes</li>
+                <li>Le phare d'Alexandrie</li>
+            </ul>
+            <h2>Nouvelles merveilles du monde</h2>
+            <p>Cette liste a été établie en 2009 à la suite d'un vote par Internet.</p>
+            <ul class="merveilles" id="nouvelles">
+                <li class="existe">La Grande Muraille de Chine</li>
+                <li class="existe">Pétra</li>
+                <li class="existe">Le Christ du Corcovado</li>
+                <li class="existe">Machu Picchu</li>
+                <li class="existe">Chichén Itzá</li>
+                <li class="existe">Le Colisée</li>
+                <li class="existe">Le Taj Mahal</li>
+            </ul>
+            <h2>Références</h2>
+            <ul>
+                <li><a href="https://fr.wikipedia.org/wiki/Sept_merveilles_du_monde">Merveilles antiques</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Sept_nouvelles_merveilles_du_monde">Nouvelles merveilles</a></li>
+            </ul>
+        </div>
+        <script src="../js/cours.js"></script>
+    </body>
+</html>
+```
+Source [openclassrooms.com](openclassrooms.com)
 
-## Alternance de deux images 
+Supposons que nous voulons sélectionner toutes les nouvelles merveilles du monde. Nous souhaitons donc avoir plusieurs lignes. Plusieurs méthode sont possibles, nous allons en présenter deux : la première utilise `getElementsByTagName`, la seconde `querySelectorAll`.
 
-- Créer une page html5 contenant une image.
+Pour la première méthode, il faut tout d'abord analyser la structure du document. Les éléments que nous souhaitons récupérer sont tous des éléments de type `<li>` situés dans un élément de type `<ul>`. Cet élément est le deuxième de ce type dans l'élément `<div>` parent. La commande a utilisé serait donc : `document.body.getElementsByTagName("div")[0].getElementsByTagName("ul")[1].getElementsByTagName("li")`. Cette commande, bien que fonctionnelle, a deux inconvénients :
+1. Elle est sensible à la structure de la page. Si on rajoute un élément `<div>` avant celui que nous visons ou bien un autre élément de type `<ul>`, la commande devra changer.
+2. Elle est très longue, et donc augmente le risque d'erreurs dans sa conception.
+
+À noter que la sélection peut être un peu simplifiée en remarquant que la liste visée possède un identifiant noté `nouvelles`.
+
+La seconde methode utilise la puissance des sélecteurs CSS avant `querySelectorAll`. On reprends la même sélection qu'à la méthode précédente, mais traduite avec des sélecteurs CSS. Il faut seulement remarquer que l'élément `<ul>` que nous visons possède l'identifiant `nouvelles`. La commande devient `document.querySelectorAll("div > ul#nouvelles > li")`.
+
+# Manipulation du CSS en Javascript
+
+Le CSS se manipule assez simplement en Javascript. Pour accéder au style de l'élément `element`, il suffit d'écrire `element.style`. Ainsi on pourra accéder à ses attributs de style très simplement en ecrivant `element.style.property`. La modification du style est effectué de la même manière : `element.style.property = value`. Attention à ne pas oublier l'unité de `value` (px, cm, in,...).
+
+Prenons quelques exemple. Pour accéder à la couleur du texte d'un element (en supposant qu'on ait récupéré au préalable l'élément), il suffit d'écrire `element.style.color`. De même pour définir cette couleur à bleu, il faut écrire : `element.style.color = blue`. Pour récupérer la couleur de fond, il faut écrire `element.style.backgroundColor`. Attention, la propriété CSS correspondant à la couleur de fond est `background-color`, mais Javascript n'accepte pas les tirets, il faut donc l'ommettre et remplacer la première lettre du deuxième mot par une majuscule.
+
+Cette méthode est très pratique, mais elle ne permet pas de récupérer les styles définis dans des fichiers CSS. Pour ce faire, il faut utiliser la fonction `getComputedStyle`. Par exemple, si on veut récupérer la couleur de fond d'un élément, sachant que cette couleur a été définie dans un fichier CSS, il faut écrire `getComputedStyle(element).backgroundColor`.
+
+# TP : Alternance de deux images 
+
+- Créer une page HTML contenant une image.
 - Programmer en JavaScript une alternance entre cette image et une autre, toutes les deux secondes.
 - Ajouter un bouton et le code JavaScript associé pour arrêter ce défilement.
 - Ajouter un bouton et le code JavaScript associé pour le reprendre
-```
-1: <!DOCTYPE html>
-2: <html lang="fr">
-3: <head>
-4: <title>Actions utilisateur et JavaScript</title>
-5: <meta charset="utf-8" />
-6: <link rel="stylesheet" href="idemm.css" />
-7: <script>
-8: var alecran = 'unchat';
-9: function diaporama () {
-10:   if (alecran == 'unchat') {
-11:     document.getElementById('diapo').setAttribute('src','images/chien.jpg');
-12:     alecran = 'unchien';
-13:   } else {
-14:     document.getElementById('diapo').setAttribute('src','images/chat.jpg');
-15:     alecran = 'unchat';
-16:   }
-17: }
-18: </script>
-19: </head>
-20: 
-21: <body onload="chienchat = setInterval('diaporama();',2000);">
-22: 
-23: <h1>Actions utilisateur et JavaScript</h1>
-24: 
-25: <h2>Diaporama automatique</h2>
-26: 
-27: <div class="illustration">
-28: <img id="diapo" src="images/chat.jpg" alt="un chat" height="200" />
-29: </div>
-30: 
-31: <button onclick="clearInterval(chienchat);">stop!</button>
-32: 
-33: <button onclick="chienchat = setInterval('diaporama();',2000);">on y retourne!</button>
-34: 
-35: 
-36: </body>
-37: </html>
-```
-Vous y trouverez la démonstration au lien suivant: [[Démo]](http://www.grappa.univ-lille3.fr/~torre/Enseignement/tp/JavaScript/seances/tp4.html)
-Seul le code JavaScript sera commenté.Pour le code Html voir cours sur HTML et CSS.
-```
-<script>
-8: var alecran = 'unchat';
-...
 
-18: </script>
-```
-Nous commencons par la déclaration d'une variable qui pour nom alecran et pour valeur la chaine de caractère 'unchat'.  
-```
-<script>
-...
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Actions utilisateur et JavaScript</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="idemm.css" />
+  <script>
+    var alecran = 'unchat';
+    function diaporama () {
+      if (alecran == 'unchat') {
+        document.getElementById('diapo').setAttribute('src','images/chien.jpg');
+        alecran = 'unchien';
+      } else {
+        document.getElementById('diapo').setAttribute('src','images/chat.jpg');
+        alecran = 'unchat';
+      }
+    }
+  </script>
+</head>
 
-9: function diaporama () {
-10:   if (alecran == 'unchat') {
-11:     document.getElementById('diapo').setAttribute('src','images/chien.jpg');
-12:     alecran = 'unchien';
-13:   } else {
-14:     document.getElementById('diapo').setAttribute('src','images/chat.jpg');
-15:     alecran = 'unchat';
-16:   }
-17: }
-18: </script>
+<body onload="chienchat = setInterval('diaporama();',2000);">
+
+  <h1>Actions utilisateur et JavaScript</h1>
+
+  <h2>Diaporama automatique</h2>
+
+  <div class="illustration">
+  <img id="diapo" src="images/chat.jpg" alt="un chat" height="200" />
+  </div>
+
+  <button onclick="clearInterval(chienchat);">stop!</button>
+
+  <button onclick="chienchat = setInterval('diaporama();',2000);">on y retourne!</button>
+
+</body>
+</html>
 ```
-Il s'agit d'une fonction diaporama() comme vous pouvez le constater. si l'objet alecran prend la valeur 'unchat' alors on récupère l'élément identifié par 'diapo' et l'aide de setAttribute('src','images/chien.jpg') nous pourrions afficher l'image du chien qui est sur le lien 'images/chien.jpg'. Nous avons le procéssus inverse lorsque alecran prend la valeur 'unchien'.
-## Diaporama
+Vous y trouverez la démonstration au lien suivant: [[Démo]](http://www.grappa.univ-lille3.fr/~torre/Enseignement/tp/JavaScript/seances/tp4.html).
+Seul le code JavaScript sera commenté. Pour le code HTML voir le cours sur HTML et CSS.
+```html
+<script>
+  var alecran = 'unchat';
+  ...
+
+</script>
+```
+Nous commençons par la déclaration d'une variable qui pour nom `alecran` et pour valeur la chaine de caractère `unchat`.  
+```html
+<script>
+  ...
+  function diaporama () {
+    if (alecran == 'unchat') {
+      document.getElementById('diapo').setAttribute('src','images/chien.jpg');
+      alecran = 'unchien';
+    } else {
+      document.getElementById('diapo').setAttribute('src','images/chat.jpg');
+      alecran = 'unchat';
+    }
+  }
+</script>
+```
+Il s'agit d'une fonction `diaporama()` comme vous pouvez le constater. si l'objet `alecran` prend la valeur `unchat` alors on récupère l'élément identifié par `diapo` et l'aide de `setAttribute('src','images/chien.jpg')` nous pourrions afficher l'image du chien qui est sur le lien `images/chien.jpg`. Nous avons le processus inverse lorsque `alecran` prend la valeur `unchien`.
+
+# TP : Diaporama
 - Placer des noms d'images dans un tableau JavaScript.
 - Programmer l'affichage une par une de ces images dirigés par deux boutons, un précédent, un suivant
-```
-1: <!DOCTYPE html>
-2: <html lang="fr">
-3: <head>
-4: <title>Actions utilisateur et JavaScript</title>
-5: <meta charset="utf-8" />
-6: <link rel="stylesheet" href="idemm.css" />
-7: <script>
-8: var mesphotos = ['chat.jpg','chien.jpg','sanglier.jpg','lapin.jpg'];
-9: var image_en_cours = 0;
-10: function suivante () {
-11:   image_en_cours = image_en_cours + 1;
-12:   if (image_en_cours == mesphotos.length) {
-13:     image_en_cours = 0;
-14:   }
-15:   document.getElementById('ecran').src = 'images/'+mesphotos[image_en_cours];
-16: }
-17: function precedente () {
-18:   image_en_cours = image_en_cours - 1;
-19:   if (image_en_cours < 0) {
-20:     image_en_cours = mesphotos.length-1;
-21:   }
-22:   document.getElementById('ecran').src = 'images/'+mesphotos[image_en_cours];
-23: }
-24: </script>
-25: </head>
-26: 
-27: <body>
-28: 
-29: <h1>Actions utilisateur et JavaScript</h1>
-30: 
-31: <h2>Diaporama manuel</h2>
-32: 
-33: <div class="illustration">
-34: <img id="ecran" src="images/chat.jpg" alt="un chat" height="200" />
-35: </div>
-36: 
-37: <button onclick="precedente();">image précédente</button>
-38: <button onclick="suivante();">image suivante</button>
-39: 
-40: </body>
-41: </html>
-42: 
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Actions utilisateur et JavaScript</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="idemm.css" />
+  <script>
+    var mesphotos = ['chat.jpg','chien.jpg','sanglier.jpg','lapin.jpg'];
+    var image_en_cours = 0;
+    function suivante () {
+      image_en_cours = image_en_cours + 1;
+      if (image_en_cours == mesphotos.length) {
+        image_en_cours = 0;
+      }
+      document.getElementById('ecran').src = 'images/'+mesphotos[image_en_cours];
+    }
+    function precedente () {
+      image_en_cours = image_en_cours - 1;
+      if (image_en_cours < 0) {
+        image_en_cours = mesphotos.length-1;
+      }
+      document.getElementById('ecran').src = 'images/'+mesphotos[image_en_cours];
+    }
+  </script>
+</head>
+
+<body>
+
+  <h1>Actions utilisateur et JavaScript</h1>
+
+  <h2>Diaporama manuel</h2>
+
+  <div class="illustration">
+  <img id="ecran" src="images/chat.jpg" alt="un chat" height="200" />
+  </div>
+
+  <button onclick="precedente();">image précédente</button>
+  <button onclick="suivante();">image suivante</button>
+
+  </body>
+</html>
+
 ```
 Vous y trouverez la démonstration au lien suivant: [Démo](http://www.grappa.univ-lille3.fr/~torre/Enseignement/tp/JavaScript/seances/tp4bis.html)
 
-NB: il y aucune différence entre ``document.getElementById('ecran').src="" `` et ``document.getElementById('diapo').setAttribute('src','images/chat.jpg');``, ils ont tous les deux le même rôle. Le ".src=" est une mannière plus simple d'écrire le .setAttribute("","")".
+NB: il y aucune différence entre `document.getElementById('ecran').src=""` et `document.getElementById('diapo').setAttribute('src','images/chat.jpg');`, ils ont tous les deux le même rôle. Le `.src=` est une mannière plus simple d'écrire le `.setAttribute("","")`.
 
 # À VOUS DE JOUER
 
