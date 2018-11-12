@@ -1,7 +1,5 @@
 # Recherche sur le Web 
 
-Objectif : Ce cours s'adresse
-à Rédiger
 
 Plan du cours : 
 1. Rechercher plus efficacement sur le web
