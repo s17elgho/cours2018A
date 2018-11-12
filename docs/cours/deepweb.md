@@ -1,5 +1,3 @@
-# ELU 525: Exploration du web
-
 # Cours sur le web profond  
 *Objectif du cours: Comprendre le fonctionnement du deep web et être capable d'y faire des recherches en toute sécurité.*
 
@@ -14,18 +12,18 @@
 * Le web profond est la partie du web inaccessible par les moteurs de recherche classiques, c’est-à-dire non indexée ou dont le contenu est d’accès limité. On cite par exemple les sites web accessibles via une connexion sécurisée comme les transactions bancaires sur des comptes en ligne ou bien les vidéos à la demande sur Netflix.
 
  *Pourquoi certains sites sont indexés et d'autres non ?*
- 
+
  * Pour qu'un site internet soit indexé par un moteur de recherche, il faut qu'il respecte des normes. Ces normes peuvent intervenir sur le format, le contenu et l'accessibilité des robots sur les sites. Et pour que le site en question soit indexé il faut qu'il respecte ces normes instaurées par les moteurs de recherche afin de figurer dessus.
- 
+
  * Certains sites ne sont pas indexés car le format des fichiers web est différents du HTML (HyperText Markup Language)ou bien les fichiers sont très volumineux et alors ne sont pas pris en compte. De plus si un robot d'indexation ne peut pas avoir accès au contenu de la page, cette dernière ne pourra être indexée. Il peut aussi y avoir des problèmes dans l'écriture de l'URL (une syntaxe incorrecte ou autres ).
- 
+
  * Tous ces paramètres entrent en compte lors d'une indexation et s'ils ne sont pas respectés, le site en question ne pourra pas être indexé et son contenu ne figurera pas sur le moteur de recherche.
 
 **I.3- LE WEB OBSCURE OU DARK WEB:**
 * Le dark web est le contenu du web qui existe sur des réseaux superposés appelés  darknets. Ce sont des petits réseaux pair à pair en plus des réseaux Tor, I2P et autres gérés par des entités privées dont le partage est anonyme (les adresses IP ne sont pas partagées publiquement). Ces réseaux utilisent des protocoles spécifiques intégrant des fonctions d’anonymisation. Le dark web constitue une petite partie du web profond.Le contenu du dark web est divers mais souvent illégal: cybercrime,vente et achat de biens ou services illégaux,partage de fichiers confidentiels,...etc .
-  
+
 * Il faut bien faire la différence entre le deux termes : le Deep Web (l’Internet non indexé) et le Dark Web (les bas fonds obscurs de l’Internet).
-  
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Deepweb_graphical_representation.svg/800px-Deepweb_graphical_representation.svg.png)  
 Source:Wikimedia
 
@@ -52,7 +50,7 @@ Réseau normal:
 Réseau Tor:  
 ![](https://www.supinfo.com/articles/resources/171562/3109/4.png)  
 images prises du site de l'Université SupInfo
-* Tous les échanges entre relais Tor  sont sécurisés et cryptés. Tor propose également à ses utilisateurs un ensemble de services cachés sur internet en masquant l’identité (adresse IP, …) du serveur qui les héberge ; ce dernier recevra de Tor une adresse avec l’extension ".onion" (comme par exemple "nomdusite.onion") et ne pourra être accessible que par des internautes du réseau Tor. L’accès d’utilisateurs à un service web caché se fait selon un protocole défini par Tor. 
+* Tous les échanges entre relais Tor  sont sécurisés et cryptés. Tor propose également à ses utilisateurs un ensemble de services cachés sur internet en masquant l’identité (adresse IP, …) du serveur qui les héberge ; ce dernier recevra de Tor une adresse avec l’extension ".onion" (comme par exemple "nomdusite.onion") et ne pourra être accessible que par des internautes du réseau Tor. L’accès d’utilisateurs à un service web caché se fait selon un protocole défini par Tor.
 * Pour accéder au réseau Tor il faut utiliser le navigateur du même nom : Tor Browser. Le logiciel Tor Browser permet d’aller sur le réseau Tor, et donc de consulter les sites du deep web.  
 
 *Fonctionnalités de TOR:*  
@@ -62,7 +60,7 @@ Tor propose à ses utilisateurs des fonctions axées sur la vie privée:
 1. Suppression des cookies après chaque session – Tor supprime tous  les cookies d’une session juste après sa fermeture.Cette suppression s’assure de ne laisser aucune trace de vos navigations.  
 2. Des niveaux de sécurité: Différents  niveaux de sécurité sont conçus afin de  neutraliser les attaques contre votre navigateur.  
 3. Une nouvelle identité :Il est possible de changer totalement votre session de navigateur. Si vous utilisez d’utiliser cette fonction, le navigateur TOR va redémarrer en effaçant toutes les informations de votre navigation.  
-4. Accéder à des sites en .onion :C’est l’une des particularités de TOR. Il propose des sites avec une adresse en .onion accessibles uniquement via le navigateur TOR. 
+4. Accéder à des sites en .onion :C’est l’une des particularités de TOR. Il propose des sites avec une adresse en .onion accessibles uniquement via le navigateur TOR.
 
 ### III-LE CONTENU DU DEEP WEB:  
 
@@ -87,7 +85,7 @@ En outre, on peut également acheter un diplôme: avec inscription dans la base 
 
 L'anonymat protège la vie privée et la liberté fondamentale des utilisateurs mentionnées dans le code civil(article 9) et la Convention européenne des droits de l’homme (article 8).Ainsi, l'utilisation du deep web est tout à fait légitime et n'est pas à l'origine illicite.Les dissidents ou les défenseurs de droits s'y rendent pour communiquer librement dans des Etats qui limitent la liberté d'expression.
 Néanmoins, les lois sont transgressées au moment où on achète des biens ou des services illicites sur cette plateforme.Par ailleurs, avant d'effectuer un achat en Bitcoin, il faut s'assurer que les exigences réglementaires sont respectées.Les lois concernant le commerce de données par des moyens illicites, le vol de données et leur usage frauduleux sont aussi applicables sur le deep web.  
-N'oubliez pas que sur le deep web il y a du bon mais aussi le pire, donc soyez extrêmement prudent, patient et choisissez bien les sites que vous souhaitez visiter. Sur le deep web **vous êtes seul responsable de vos actes**. 
+N'oubliez pas que sur le deep web il y a du bon mais aussi le pire, donc soyez extrêmement prudent, patient et choisissez bien les sites que vous souhaitez visiter. Sur le deep web **vous êtes seul responsable de vos actes**.
 
 ## Partie pratique:
 
@@ -112,11 +110,11 @@ Pour se rendre sur le Hidden Wiki, *tapez* l’adresse « zqktlwi4fecvo6ri.onion
 
 ![](https://i.imgur.com/ZbN1BYR.png)
 
-Une fois vous cliquez sur le lien « Hidden Wiki », vous êtes redirigés vers la page d’accueil du Hidden Wiki : 
+Une fois vous cliquez sur le lien « Hidden Wiki », vous êtes redirigés vers la page d’accueil du Hidden Wiki :
 
 ![](https://i.imgur.com/EPGKXks.png)
 
-Vous y retrouvez un ensemble de liens vers des sites du deep web classés par catégorie (services financiers, services commerciaux, réseaux sociaux, …). 
+Vous y retrouvez un ensemble de liens vers des sites du deep web classés par catégorie (services financiers, services commerciaux, réseaux sociaux, …).
 
 Si vous essayez d’entrer l’URL qui permet d’accéder au Hidden Wiki dans un navigateur conventionnel (comme mozilla firefox, internet explorer, …), le navigateur ne trouvera pas la page désirée :
 
@@ -130,7 +128,7 @@ En cliquant dessus le navigateur vous redirige vers le moteur de recherche Not E
 
 ![](https://i.imgur.com/4khXK8j.png)
 
-Lorsque vous effectuez une recherche sur le moteur de recherche Not Evil, par exemple le mot « deepweb », vous constatez que les liens vers les pages retournées par notre requête ont toutes pour extensions .onion : 
+Lorsque vous effectuez une recherche sur le moteur de recherche Not Evil, par exemple le mot « deepweb », vous constatez que les liens vers les pages retournées par notre requête ont toutes pour extensions .onion :
 
 ![](http://3.bp.blogspot.com/-JX5_btlREns/Va4ZvAahw8I/AAAAAAAAAX8/NosP6vJPc14/s1600/c27.PNG
 )
@@ -146,4 +144,3 @@ A présent vous savez comment explorer le deep web!
   6-Le deep web https://www.supinfo.com/articles/single/3109-deep-web    
   7-Fonctionnalités de Tor https://meilleurvpn.net/19119/navigateur-tor/  
   8-COMMENT ACCEDER AU WEB INVISIBLE (DEEP WEB) EN TOUTE SECURITE http://jacquesgoueth.blogspot.com/2015/07/comment-acceder-au-web-invisible-deep.html  
-  

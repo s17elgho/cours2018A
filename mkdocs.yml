@@ -3,7 +3,11 @@ site_description: Cours participatif sur le Web.
 site_author: Etudiants participant au cours.
 nav:
   - Home: index.md
-  - Cours: cours/index.md
+  - Cours:
+      - cours/html.md
+      - cours/javascript.md
+      - cours/deepweb.md
+      - Sessions précédentes: cours/index.md
   - Contribuer:
       - Définir le contenu : contribuer/contenu.md
       - Comment réaliser du contenu : contribuer/realiser.md
