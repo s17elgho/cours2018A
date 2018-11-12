@@ -170,3 +170,209 @@ Exemple:
 `<img src=”image_de_chat.png” alt=”Mon chat felix”>`
 
 Il est également possible d’afficher une image provenant d’un autre site en entrant l’adresse absolue du site en question dans le src.
+
+_Evaluation sur les bases en HTML_:
+
+1- Dans le tableau suivant , relier les différents éléments à ce qu’ils servent à faire
+
+![tableau évaluation html](images/evaluation_html.png)
+
+2- Combien de niveaux d’organisation sont définis pour les titres en HTML ?
+3- Nous souhaitons écrire un sommaire avec le titre des grandes partie
+    a) Est-il plus pertinent d’utiliser une liste ordonnée ou non ordonnée?
+    b) Quel attribut permet de placer des chiffres romain en majuscule devant le titre de chaque partie
+    c) Utiliser un code HTML pour écrire le sommaire de ce cours (les grandes partie du Chapitre “Les bases en HTML”)
+
+4- Quels attributs utilise-t-on pour ajouter une image à une page web?
+
+5- On souhaite ajouter une image d’un coucher de soleil ayant le nom coucher_soleil.png. Proposer un code HTML pour ajouter cette image à une page web.
+
+
+## Les bases en CSS:
+
+### Sélecteurs, propriétés:
+
+CSS va permettre de mettre en page un contenu et de changer son apparence en lui appliquant des styles. Pour appliquer un style à un élément HTML, il faut tout d’abord le sélectionner, c’est le rôle du sélecteur. Il existe différents types de sélecteurs appelés “sélecteurs simples” (ce sont des sélecteurs d’éléments) ou “sélecteurs complexes”.
+
+Les propriétés CSS vont permettre de choisir quels aspects d’un élément HTML on souhaite modifier. La propriété color peut prendre le nom d’une couleur.
+
+Exemple:
+
+```
+p{
+    color: blue;
+    font-size: 14px;
+}
+```
+
+Ici nous utilisons un sélecteur CSS simple p qui va cibler tous les paragraphes de la page HTML. Ensuite deux propriétés sont utilisées: color pour modifier la couleur et font-size pour modifier la police d’écriture.
+
+Le couple “propriété: valeur” est appelé déclaration CSS et chaque déclaration doit être séparé d’une autre par un point virgule.
+
+Où écrire le code CSS ?
+
+1. On peut l’écrire dans un élément HTML style. Ainsi le code CSS ne s’appliquera qu’à la page HTML dans laquelle il a été écrit. L’élément style sera en général placé en haut d’une page HTML, à l’intérieur de l’élément head.
+Cette méthode n’est pas recommandée (soucis d’organisation).
+2. On peut écrire le CSS dans la balise ouvrante des éléments HTML en utilisant un attribut style. Par exemple: pour appliquer le style à tout un paragraphe:
+<p style=”color: blue;font-size: 16px;”>Un paragraphe</p>
+
+Non recommandé non plus car pas très lisible.
+
+3. La meilleure méthode est d’écrire le CSS dans un fichier séparé portant l’extension “.css” et enregistré dans le même dossier que le fichier HTML. Un avantage est qu’on va pouvoir appliquer des styles à plusieurs page HTML en même temps.
+Il reste ensuite à lier le fichier CSS avec le fichier HTML avec l’élément link qui va avoir besoin de deux attributs: rel, qui va préciser le type de fichier et href qui va indiquer l’adresse relative du fichier CSS. On place l’élément link (balise orpheline) dans l’élément head de notre fichier HTML.
+
+Exemple: <link rel=”stylesheet” href=”styles.css”>     (dans le head)
+
+### Commentaires et indentation:
+
+On utilise la syntaxe suivante pour commenter à l’intérieur d’un code: /*Je suis un commentaire*/.
+L’indentation est importante en CSS, après chaque déclaration, il vaut mieux retourner à la ligne.
+
+### Sélecteurs CSS simples:
+
+Des exemples de sélecteurs: le sélecteur p va cibler tous les éléments d’un paragraphe, le sélecteur h1 va permettre d’appliquer des styles au titre h1, le sélecteur a va permettre de mettre en forme les liens, etc
+
+![exemple sélecteurs css simples](images/img5.png)
+
+Remarque: On peut appliquer les styles à plusieurs éléments en séparant les sélecteurs par des points virgules.
+
+Exemple:
+
+```
+h1,p{
+    color: blue;
+}
+```
+
+Ici on applique une couleur bleue à tous nos paragraphes ainsi qu’à notre titre principal d’un coup.
+
+Nous serons vite limités avec des sélecteurs simple. En effet il n’est par exemple pas possible d’appliquer une couleur différente à deux paragraphes différents. C’est pourquoi nous pouvons utiliser les sélecteurs #id et .class qui vont permettre de cibler un élément en particulier plutôt qu’un type d’élément.
+
+### Les attributs id et class:
+
+Ces deux attributs servent à cibler un élément en particulier plutôt qu’un type. Nous allons les définir à l’intérieur d’une balise ouvrante et leur attribuer une valeur.
+
+Par exemple, dans le fichier HTML:
+
+```html
+<p id=”p1”> 1er paragraphe </p>
+<p class=”p1”> 2eme paragraphe </p>
+```
+
+Pour cibler un élément possédant un attribut id, il faudra préciser la valeur de l’attribut précédé d’un dièse (#). 
+Pour cibler un élément possédant l’attribut class il faudra préciser la valeur de l’attribut précédé d’un point (.).
+C’est pour cette raison qu’on peut tout à fait donner la même valeur à un attribut class et id sans qu’il n’y ait de risque de confusion. L’exemple à été choisi de sorte à montrer cela.
+
+Ensuite dans le code CSS on peut par exemple appliquer deux styles à un même paragraphe:
+
+```
+/*L’élément portant l’id “p1” sera en bleu*/
+#p1{
+    color: blue;
+}
+
+/*L’élément portant la class “p1” sera en rouge*/
+.p1{
+    color: red;
+}
+```
+
+_Attention_: Chaque id doit avoir une valeur unique tandis que plusieurs attributs class peuvent posséder la même valeur.
+En cas de conflit l’id est prioritaire sur la classe
+
+### L’héritage en CSS:
+
+L’héritage est un principe important en CSS. Cela signifie que tout élément HTML enfant va hériter “en cascades” des styles de ses parents. Par exemple tous les éléments à l’intérieur de l’élément body sont des enfants de cet élément. Donc si on applique un style à body, tous les éléments à l’intérieur de cette balise en hériteront automatiquement.
+
+Cependant, en cas de conflit, le style prioritaire va être le style le plus proche de l’élément. Ainsi si on applique la couleur violette au body et qu’on applique ensuite la couleur rouge à un paragraphe à l’intérieur du body, ce paragraphe sera affiché en rouge.
+
+### Les éléments HTML de type block et de type inline:
+
+En HTML, tout élément est soit de type “block” (en bloc) soit de type “inline” (en ligne). Le tableau ci-dessous classe les différents éléments dans ces deux catégories.
+
+![exemple éléments HTML de type block et de type inline](images/img6.png)
+
+Ce tableau va être utile pour mettre en forme les pages web car on ne peut pas appliquer les mêmes propriétés aux éléments de type block et aux éléments de type inline.
+
+**Les éléments de type block**:
+
+Un élément de type block va toujours commencer sur une nouvelle ligne et prendre toute la largeur de la page. L’élément p est un élément de type block par exemple.
+Lorsqu’on applique une bordure au paragraphe p (grâce à la propriété border) comme ci-dessous, il prend toute la largeur de la page.
+
+```
+p{
+border: 4px solid #88BB11;
+}
+```
+**Les éléments de type inline**:
+
+Au contraire des éléments de type block, les éléments de type inline ne vont pas commencer sur une nouvelle ligne mais s’insérer dans la ligne actuelle.
+Les éléments de type inline prennent uniquement la largeur qui leur est nécessaire. Ainsi, si on applique le même code que ci-dessus à un élément strong, seul la portion de ligne contenant l’élément sera encadrée.
+
+**Les éléments div et span**:
+
+Ces éléments n’ont aucune valeur sémantique, ils ne servent pas à donner un sens à un contenu.
+
+1. div est un élément de type block et va être utilisé de conteneur pour plusieurs autres éléments HTML. Nous pourrons appliquer des styles directement à l’élément div afin de faciliter la mise en forme de la page.
+ 
+_Exemple d’utilisation_:
+
+Le code HTML:
+
+```html
+<div  class=”div-para”>
+    <p>L’élément p est un élément de type block</p>
+    <p>Un <strong> autre</strong> paragraphe</p>
+</div>
+```
+Le code CSS:
+
+```
+.div-para{
+    background-color: #88BB11.
+    font-weight: bold;
+}
+```
+
+De cette manière le texte entre les bornes de l’élément div va être en gras et avec un fond de couleur hexadécimale #88BB11 c’est à dire vert.
+
+2. Span est un élément de type inline et va servir de conteneur pour du contenu textuel. Cet élément va être utile lorsque nous voudrons mettre en forme une portion de texte à l’intérieur d’un élément.
+
+_Exemple d’utilisation_:
+
+Code HTML:
+
+```html
+<div class=”green”>
+    <p> L’élément p est <span class=”blue”> un élément de type block</span></p>
+<div>
+```
+
+Code CSS:
+
+```
+.green{
+    background-color: #88BB11;
+    font-weight: bold;
+}
+
+.blue{
+    background-color: #1188BB.
+}
+```
+
+De cette manière, le texte sera globalement sur fond vert, mais la phrase “un élément de type block” sera sur fond bleu.
+
+_Evaluation sur les bases en CSS_:
+
+1- Pourquoi est-il généralement conseillé d’écrire le code CSS dans un fichier séparé?
+
+2- Écrire un code CSS permettant d’appliquer la couleur bleue aux titres h1, h2 et au paragraphe p.
+
+3- Classer les éléments ci-après suivant s’ils sont du type block ou du type inline:
+img, h1, strong, em, li, p, a.
+
+4- En quoi consiste l’héritage en CSS ?
+
+5- Pour cibler un élément de type class, doit-on utiliser le point (.) ou le dièse (#) ?
+
