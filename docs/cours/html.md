@@ -214,8 +214,9 @@ Où écrire le code CSS ?
 1. On peut l’écrire dans un élément HTML style. Ainsi le code CSS ne s’appliquera qu’à la page HTML dans laquelle il a été écrit. L’élément style sera en général placé en haut d’une page HTML, à l’intérieur de l’élément head.
 Cette méthode n’est pas recommandée (soucis d’organisation).
 2. On peut écrire le CSS dans la balise ouvrante des éléments HTML en utilisant un attribut style. Par exemple: pour appliquer le style à tout un paragraphe:
+```
 <p style=”color: blue;font-size: 16px;”>Un paragraphe</p>
-
+```
 Non recommandé non plus car pas très lisible.
 
 3. La meilleure méthode est d’écrire le CSS dans un fichier séparé portant l’extension “.css” et enregistré dans le même dossier que le fichier HTML. Un avantage est qu’on va pouvoir appliquer des styles à plusieurs page HTML en même temps.
