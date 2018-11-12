@@ -11,7 +11,7 @@ N'hésitez pas à proposer ici des références intéressantes
 # La session d'automne 2018 du cours2018
 
 À vous de jouer :-)
-
+- [Cours de html](html.md)
 - [Initiation au Javascript](javascript.md)
 
 #Sessions Précédentes
