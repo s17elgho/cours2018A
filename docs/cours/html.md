@@ -145,10 +145,15 @@ Un site n’est qu’un ensemble de fichiers liés entre eux. Il faut alors dist
 
 Exemple pour chacun des cas:  
 Fichier dans un même dossier: 
+
 `<p> Cliquer <a href=”fichier_meme_dossier.html”> ici</a> </p>` 
+
 Fichier dans un dossier parent: 
+
 `<p> Cliquer <a href=”../fichier-parent.html”> ici </a> </p>` 
+
 Fichier dans un sous-dossier de nom “sous”: 
+
 `<p> Cliquer <a href=”sous/fichier-sous.html”> ici </a> </p>`
 
 L’attribut target: Cet attribut va permettre de choisir où doit s’ouvrir notre page de destination. En pratique, nous utiliserons souvent la valeur “_blank” qui spécifie qui spécifie que la nouvelle page doit s’ouvrir dans un nouvel onglet.
