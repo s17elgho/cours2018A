@@ -3,6 +3,7 @@
 # Cours sur le web profond  
 *Objectif du cours: Comprendre le fonctionnement du deep web et être capable d'y faire des recherches en toute sécurité.*
 
+
 ## Partie théorique:
 
 ### I- GENERALITES SUR LE WEB:
@@ -25,7 +26,8 @@
   
 * Il faut bien faire la différence entre le deux termes : le Deep Web (l’Internet non indexé) et le Dark Web (les bas fonds obscurs de l’Internet).
   
-![](https://i0.wp.com/www.himanshutech.com/wp-content/uploads/2018/06/Deep-Web-and-Dark-Web-Explained.png?resize=696%2C464&ssl=1)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Deepweb_graphical_representation.svg/800px-Deepweb_graphical_representation.svg.png)  
+Source:Wikimedia
 
 ### II- LE DEEP WEB OU WEB PROFOND:
 **II.1-  COMMENT ACCEDER AU DEEP WEB?**  
@@ -33,6 +35,7 @@
 *VPN:*  
 
 ![](https://upload.wikimedia.org/wikipedia/commons/0/0f/VPN_site-to-site.jpg)  
+Source:Wikipédia
 * Un réseau privé virtuel, abrégé VPN – Virtual Private Network , est un système permettant de créer un lien direct entre des ordinateurs distants, en isolant ce trafic. Toutes les données que vont s’échanger les utilisateurs seront donc cryptées, à l’aide de différents protocoles(PPTP, L2TP, …) et passeront par un tunnel sécurisé reliant leurs machines.
 
  * Intérêt des VPN : Utiliser un VPN permet aux utilisateurs de garder leur identité cachée. En effet, un VPN permet de ne pas dévoiler son adresse IP ainsi que ses informations personnelles, telles que les mots de passe, sur le Deep Web. Notre adresse IP va être remplacée par une adresse IP étrangère délivrée par un serveur situé à l’étranger. Ainsi, lorsque l’on surfe sur internet, seule cette adresse IP est visible. Un VPN peut également être utilisé d’un point de vue professionnel car il permet de réaliser du travail à distance, en accédant à un réseau interne depuis une autre machine.Toutefois, l’utilisation d’un VPN ne permet pas d’être totalement anonyme sur le Web, les fournisseurs de VPN pouvant toujours avoir accès à nos données personnelles.[4]
@@ -48,6 +51,7 @@ Réseau normal:
 ![](https://www.supinfo.com/articles/resources/171562/3109/3.png)  
 Réseau Tor:  
 ![](https://www.supinfo.com/articles/resources/171562/3109/4.png)  
+images prises du site de l'Université SupInfo
 * Tous les échanges entre relais Tor  sont sécurisés et cryptés. Tor propose également à ses utilisateurs un ensemble de services cachés sur internet en masquant l’identité (adresse IP, …) du serveur qui les héberge ; ce dernier recevra de Tor une adresse avec l’extension ".onion" (comme par exemple "nomdusite.onion") et ne pourra être accessible que par des internautes du réseau Tor. L’accès d’utilisateurs à un service web caché se fait selon un protocole défini par Tor. 
 * Pour accéder au réseau Tor il faut utiliser le navigateur du même nom : Tor Browser. Le logiciel Tor Browser permet d’aller sur le réseau Tor, et donc de consulter les sites du deep web.  
 
@@ -68,9 +72,9 @@ Tout comme Amazon Marketplace, il suffit de créer un compte sans informations p
 Par exemple, il est possible de choisir parmi les quelques milliers de drogues proposées : hash, héroïne, cocaïne ou LSD… Tout d’abord il faut se mettre en relation avec le vendeur, ensuite, lui envoyer l’adresse de livraison cryptée, il sera la seule personne en mesure de lire et enfin lui payer en Bitcoins : une monnaie 100% virtuelle développée par un japonais « Satoshi Nakamoto ».  
 
 
-![](https://upload.wikimedia.org/wikipedia/en/4/42/Silk_Road_Marketplace_Item_Screen.jpg)  
 
-![](http://www.thehiddenwiki.net/wp-content/uploads/2013/05/silk-road.jpg)  
+![](https://upload.wikimedia.org/wikipedia/en/4/42/Silk_Road_Marketplace_Item_Screen.jpg)  
+source: Wikimedia
 
 * Silkroad une plateforme d’e-commerce appartenant au Deep Web pose un gros problème aux forces de l’ordre vue que premièrement il n’y a pas de trace postale : adresse cryptée connue que par le marchand, deuxièmement il n’y a pas de trace digitale : Tor presque intraçable et enfin et surtout il n’y a pas de trace de transaction monétaire : les bitcoins passent de compte en compte sans arrêt et sont impossible à suivre.
 Les fondateurs de Silkroad ont décidé d’ouvrir the Armory, car comme bons entrepreneurs, ils cherchent à se diversifier. Mêmes principes les vendeurs proposent dans cette plateforme des biens qui sont des armes.
@@ -138,9 +142,8 @@ A présent vous savez comment explorer le deep web!
   2-Article sur Investopedia: Deep web disponible sur https://www.investopedia.com/terms/d/deep-web.asp  
   3-Article sur Wikipédia:Darknets disponible sur https://en.wikipedia.org/wiki/Darknet#Uses   
   4-Article sur wikipédia :VPN https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel   
-  5-Tutoriel sur openclassrooms https://openclassrooms.com/fr/courses/2939276-surfez-incognito-sur-internet-avec-le-reseau-tor/2954671-vers-un-debut-danonymat-notion-de-proxy   
+  5-Tutoriel sur Openclassrooms https://openclassrooms.com/fr/courses/2939276-surfez-incognito-sur-internet-avec-le-reseau-tor/2954671-vers-un-debut-danonymat-notion-de-proxy   
   6-Le deep web https://www.supinfo.com/articles/single/3109-deep-web    
   7-Fonctionnalités de Tor https://meilleurvpn.net/19119/navigateur-tor/  
   8-COMMENT ACCEDER AU WEB INVISIBLE (DEEP WEB) EN TOUTE SECURITE http://jacquesgoueth.blogspot.com/2015/07/comment-acceder-au-web-invisible-deep.html  
   
-
