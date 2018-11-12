@@ -1,6 +1,7 @@
 # ELU 525: Exploration du web
 
-# Cours sur le web profond
+# Cours sur le web profond  
+*Objectif du cours: Comprendre le fonctionnement du deep web et être capable d'y faire des recherches en toute sécurité.*
 
 ## Partie théorique:
 
