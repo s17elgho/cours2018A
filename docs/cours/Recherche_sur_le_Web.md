@@ -285,33 +285,33 @@ Certaines images ne nécessitent pas d'autorisation des personnes concernées, s
 
 * Qu'est-ce qu'un droit d'auteur ?
     * ○ Le droit d'être auteur
-    * ◙ Une loi qui protège les œuvres
+    * ○ Une loi qui protège les œuvres
     * ○ Le droit de faire une œuvre
 
 * Combien de temps s'appliquent les droits d'auteurs ?
     * ○ Jusqu'à la mort de l'auteur
     * ○ 150 ans après la mort de l'auteur
-    * ◙ 70 ans après la mort de l'auteur
+    * ○ 70 ans après la mort de l'auteur
 
 * Lorsque j'obtiens des photos sur GOOGLE
     * ○ Je n'ai pas le droit de les prendre
     * ○ Je peux les prendre et les montrer à tout le monde
-    * ◙ Je peux les prendre à usage personnel et familial
+    * ○ Je peux les prendre à usage personnel et familial
 
 * Puis-je reprendre une photo dite « libre de droit » à un site web pour la mettre sur le site de mon entreprise ?
     * ○ Oui, si aucune protection technique ne bloque cet usage
     * ○ Oui, parce qu'elle est libre de droits
-    * ◙ Oui, si cette utilisation est prévue dans le contrat « attaché » à la photo
+    * ○ Oui, si cette utilisation est prévue dans le contrat « attaché » à la photo
 
 * Un document en libre accès est un document
     * ○ Que l'on peut reproduire sans demander l'autorisation à son auteur
-    * ◙ Que l'on peut consulter librement
+    * ○ Que l'on peut consulter librement
     * ○ Dont l'accès est facile
 
 * L'auteur d'un logiciel dispose de deux types de droits :
     * ○ Moraux et patrimoniaux
     * ○ Moraux et judiciaires
-    * ◙ Moraux et d'auteur
+    * ○ Moraux et d'auteur
 
 ---
 
