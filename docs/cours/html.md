@@ -45,7 +45,7 @@ Il faut bien veiller à ce que le premier élément déclaré soit le dernier re
 ## Les titres et paragraphes:
 
 Il y a 6 niveaux d’organisation pour les titres définis par les éléments h1, h2, h3, h4, h5 et h6\. h1 étant le titre principal et h6 le titre le plus petit.  
-Pour ajouter un titre dans une page html, c’est très simple il suffit d’utiliser les balises comme par exemple: 
+Pour ajouter un titre dans une page html, c’est très simple il suffit d’utiliser les balises comme par exemple:
 
 `<h3> Mon titre </h3>`
 
@@ -86,9 +86,9 @@ Par exemple:
 
 ```html
 <ul>  
-    <li>Pomme</li> 
-    <li>Vélo</li> 
-    <li>Guitare</li> 
+    <li>Pomme</li>
+    <li>Vélo</li>
+    <li>Guitare</li>
 </ul>
 ```
 
@@ -119,7 +119,7 @@ Par exemple:
 ```html
 <dl>  
     <dt>HTML</dt>  
-    <dd>HTML signifie HyperText Markup Language.</dd> 
+    <dd>HTML signifie HyperText Markup Language.</dd>
 </dl>
 ```
 
@@ -144,11 +144,11 @@ Ici même principe, mais l’attribut va prendre comme valeur, une adresse relat
 Un site n’est qu’un ensemble de fichiers liés entre eux. Il faut alors distinguer trois cas: la cas où la page de départ et celle d’arrivée sont dans le même dossier; le cas où la page destination est dans un sous-dossier par rapport à la page de départ et le cas où la page de destination est un dossier parent par rapport à la page de départ.
 
 Exemple pour chacun des cas:  
-Fichier dans un même dossier: 
-`<p> Cliquer <a href=”fichier_meme_dossier.html”> ici</a> </p>` 
-Fichier dans un dossier parent: 
-`<p> Cliquer <a href=”../fichier-parent.html”> ici </a> </p>` 
-Fichier dans un sous-dossier de nom “sous”: 
+Fichier dans un même dossier:
+`<p> Cliquer <a href=”fichier_meme_dossier.html”> ici</a> </p>`
+Fichier dans un dossier parent:
+`<p> Cliquer <a href=”../fichier-parent.html”> ici </a> </p>`
+Fichier dans un sous-dossier de nom “sous”:
 `<p> Cliquer <a href=”sous/fichier-sous.html”> ici </a> </p>`
 
 L’attribut target: Cet attribut va permettre de choisir où doit s’ouvrir notre page de destination. En pratique, nous utiliserons souvent la valeur “_blank” qui spécifie qui spécifie que la nouvelle page doit s’ouvrir dans un nouvel onglet.
@@ -157,7 +157,7 @@ Par exemple: `<p> Vers <a href=”http://wikipedia.org” target=”_blank”> W
 
 _Remarque:_  
 -On peut aussi permettre l’envoi d’un mail, lorsqu’un visiteur va cliquer sur le lien, sa messagerie par défaut va automatiquement s’ouvrir:
-`<p> M’envoyer <a href=”mailto: louis.somme@imt-atlantique.net”> un mail </a> </p>` 
+`<p> M’envoyer <a href=”mailto: louis.somme@imt-atlantique.net”> un mail </a> </p>`
 
 ## Insérer des images en HTML:
 
@@ -303,7 +303,7 @@ Par exemple, dans le fichier HTML:
 <p class=”p1”> 2eme paragraphe </p>
 ```
 
-Pour cibler un élément possédant un attribut id, il faudra préciser la valeur de l’attribut précédé d’un dièse (#). 
+Pour cibler un élément possédant un attribut id, il faudra préciser la valeur de l’attribut précédé d’un dièse (#).
 Pour cibler un élément possédant l’attribut class il faudra préciser la valeur de l’attribut précédé d’un point (.).
 C’est pour cette raison qu’on peut tout à fait donner la même valeur à un attribut class et id sans qu’il n’y ait de risque de confusion. L’exemple à été choisi de sorte à montrer cela.
 
@@ -358,7 +358,7 @@ Les éléments de type inline prennent uniquement la largeur qui leur est néces
 Ces éléments n’ont aucune valeur sémantique, ils ne servent pas à donner un sens à un contenu.
 
 1. div est un élément de type block et va être utilisé de conteneur pour plusieurs autres éléments HTML. Nous pourrons appliquer des styles directement à l’élément div afin de faciliter la mise en forme de la page.
- 
+
 _Exemple d’utilisation_:
 
 Le code HTML:
@@ -438,5 +438,3 @@ type inline: img, strong, em, a
 4- L'héritage en CSS consiste à faire hériter “en cascades” les enfants des styles de ses parents. Par exemple tous les éléments à l’intérieur de l’élément body sont des enfants de cet élément. Donc si on applique un style à body, tous les éléments à l’intérieur de cette balise en hériteront automatiquement.
 
 5-Pour cibler un élément de type class, on utilise le point (.)
-
-
