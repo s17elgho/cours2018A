@@ -31,7 +31,8 @@ L'indexation désigne l'action d'un programme utilisé par un moteur de recherch
 Source:Wikimedia
 
 ### II- LE DEEP WEB OU WEB PROFOND:
-**II.1-  COMMENT ACCEDER AU DEEP WEB?**  
+**II.1-  Fonctionnement d'un réseau TOR?**  
+Avant de commencer la navigation sur le deep web, il faut comprendre ce que c'est qu'un réseau Tor et connaître d'autres notions qui lui sont  liées (VPN, Proxy,..):
 
 *VPN:*  
 
@@ -141,9 +142,10 @@ A présent vous savez comment explorer le deep web!
 ## Références ##  
   1-Article sur Wikipédia: Le web surfacique disponible sur https://en.wikipedia.org/wiki/Surface_web  
   2-Article sur Investopedia: Deep web disponible sur https://www.investopedia.com/terms/d/deep-web.asp  
-  3-Article sur Wikipédia:Darknets disponible sur https://en.wikipedia.org/wiki/Darknet#Uses   
-  4-Article sur wikipédia :VPN https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel   
-  5-Tutoriel sur Openclassrooms https://openclassrooms.com/fr/courses/2939276-surfez-incognito-sur-internet-avec-le-reseau-tor/2954671-vers-un-debut-danonymat-notion-de-proxy   
-  6-Le deep web https://www.supinfo.com/articles/single/3109-deep-web    
-  7-Fonctionnalités de Tor https://meilleurvpn.net/19119/navigateur-tor/  
-  8-COMMENT ACCEDER AU WEB INVISIBLE (DEEP WEB) EN TOUTE SECURITE http://jacquesgoueth.blogspot.com/2015/07/comment-acceder-au-web-invisible-deep.html  
+  3-Article sur Wikipédia:Darknets disponible sur https://en.wikipedia.org/wiki/Darknet#Uses 
+  4-L'indexation Google: https://optimiz.me/indexation-comprendre-le-fonctionnement-de-lindex-google/
+  5-Article sur wikipédia :VPN https://fr.wikipedia.org/wiki/R%C3%A9seau_priv%C3%A9_virtuel   
+  6-Tutoriel sur Openclassrooms https://openclassrooms.com/fr/courses/2939276-surfez-incognito-sur-internet-avec-le-reseau-tor/2954671-vers-un-debut-danonymat-notion-de-proxy   
+  7-Le deep web https://www.supinfo.com/articles/single/3109-deep-web    
+  8-Fonctionnalités de Tor https://meilleurvpn.net/19119/navigateur-tor/  
+  9-COMMENT ACCEDER AU WEB INVISIBLE (DEEP WEB) EN TOUTE SECURITE http://jacquesgoueth.blogspot.com/2015/07/comment-acceder-au-web-invisible-deep.html  
