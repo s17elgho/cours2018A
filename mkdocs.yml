@@ -22,6 +22,7 @@ nav:
       - Séance 5: deroule/seance5.md
       - Séance 6: deroule/seance6.md
       - Séance 9: deroule/seance9.md
+      - Séance 12: deroule/seance12.md
   - A propos: about/about.md
 
 extra_css: [extra.css]

@@ -10,6 +10,9 @@
 
 **I.2- LE WEB PROFOND OU DEEP WEB:**
 * Le web profond est la partie du web inaccessible par les moteurs de recherche classiques, c’est-à-dire non indexée ou dont le contenu est d’accès limité. On cite par exemple les sites web accessibles via une connexion sécurisée comme les transactions bancaires sur des comptes en ligne ou bien les vidéos à la demande sur Netflix.
+*Que veut dire indexation?*  
+
+L'indexation désigne l'action d'un programme utilisé par un moteur de recherche ( Google, Yahoo, Bing,..etc) qui parcourt un site, en copie le contenu et le stocke dans des serveurs. Dans le cas de Google, le robot d'indexation qui s'appelle Googlebot explore les pages web et suit les liens y présents pour découvrir de nouvelles pages. Il copie et enregistre les pages dans les serveurs de Google.
 
  *Pourquoi certains sites sont indexés et d'autres non ?*
 
