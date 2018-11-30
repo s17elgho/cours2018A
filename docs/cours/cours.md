@@ -14,9 +14,9 @@ C’est avant tout pour se créer un socle indispensable pour comprendre comment
 
 Nous nous concentrerons sur les versions HTML5 et CSS3 qui sont les dernières versions stables en date de ces deux langages.
 
-## Les bases en HTML5
+# Les bases en HTML5
 
-### Quelques définitions et utilité des éléments, des balises et des attributs:
+## Quelques définitions et utilité des éléments, des balises et des attributs:
 
 *   **Eléments:**  
     Les éléments HTML servent à structurer le contenu pour lui donner un sens. Par exemple, on utilise des éléments pour définir un paragraphe, un titre, insérer une image ou une vidéo dans un document.
@@ -32,7 +32,7 @@ Nous nous concentrerons sur les versions HTML5 et CSS3 qui sont les dernières v
 
 Attention: Les balises et les attributs ne seront jamais affichés par le navigateur. Ils servent à indiquer au navigateur comment il doit traiter chaque contenu.
 
-### Structure d’une page HTML:
+## Structure d’une page HTML:
 
 Voici le code minimum pour une telle page avec un titre, un en-tête et un corps.
 
@@ -42,7 +42,7 @@ Le doctype du document sert à préciser le type du document. Les balises `<html
 
 Il faut bien veiller à ce que le premier élément déclaré soit le dernier refermé, tandis que le premier ouvert doit toujours être le premier fermé. Il est vivement conseillé de bien indenter son code et de mettre des commentaires comme suit: `<!-- mon commentaire -- >`.
 
-### Les titres et paragraphes:
+## Les titres et paragraphes:
 
 Il y a 6 niveaux d’organisation pour les titres définis par les éléments h1, h2, h3, h4, h5 et h6\. h1 étant le titre principal et h6 le titre le plus petit.  
 Pour ajouter un titre dans une page html, c’est très simple il suffit d’utiliser les balises comme par exemple: 
@@ -58,9 +58,9 @@ Pour créer des paragraphes, il faut utiliser l’élément p. On peut créer au
 
 Voici un exemple utilisant des titres et paragraphes:
 
-![titres et paragraphes](images/img2.png)
+![titres et paragraphes](images/img2tri.png)
 
-### Les espaces et retours à la ligne en html:
+## Les espaces et retours à la ligne en html:
 
 Les espaces “en trop” au sein d’un paragraphe ne seront jamais affichés visuellement. Pour effectuer des retours à la ligne ou marquer des espaces en HTML, il faudra utiliser des éléments. Retour à la ligne: élément br balise orpheline qui est à placer avant ce qu’on souhaite mettre à la ligne suivante. Remarque: On peut aussi utiliser l’élément hr qui est un retour ligne avec changement de thématique, c’est à dire qu’un “trait” sera tracée entre les deux lignes.
 
@@ -68,14 +68,14 @@ Gestion des espaces:
 L’élément pre sert à préformater un texte. C’est à dire qu’il va garder la même mise en forme que celui écrit à l’intérieur de la balise.  
 `<pre> Le texte ici sera affiché tel qu’il a été écrit </pre>`
 
-### Définir l’importance des textes:
+## Définir l’importance des textes:
 
 L’élément strong sert à signifier qu’un contenu est très important (il va alors être affiché en gras) nous utiliserons ensuite CSS pour gérer le poids d’un texte.  
 L’élément em sert à signifier que le contenu est “relativement” important (il va être affiché en italique).
 
-![exemple em](images/img3.png)
+![exemple em](images/img3tri.png)
 
-### Les listes en HTML:
+## Les listes en HTML:
 
 Les listes sont très utiles pour donner de la clarté et de l’ordre aux documents. Il existe plusieurs types de listes: les listes non-ordonnées, les listes ordonnées et les listes de définitions.
 
@@ -109,7 +109,7 @@ Par exemple:
 _Nous pouvons faire le choix d’ajouter un attribut type dans l’élément ol.  
 “I” correspond à des chiffres romain majuscule devant chaque éléments, “i” à des chiffres romain minuscules, “A” signifie que des lettres majuscules apparaîtront devant chaque élément de la liste et “a” des lettres minuscules._
 
-![lites html](images/img4.png)
+![lites html](images/img4tri.png)
 
 **Les listes de définition:**  
 Ces listes vont permettre de lister des termes et d’ajouter des définitions ou descriptions pour chacun de ces termes. Nous allons utiliser l’élément dl pour chaque élément à décrire puis l’élément dt pour chaque élément à décrire et enfin l’élément dd pour la définition/ description en soi.
@@ -125,7 +125,7 @@ Par exemple:
 
 Remarque: Il est tout à fait possible d’imbriquer plusieurs listes.
 
-### Liens internes et externes en HTML:
+## Liens internes et externes en HTML:
 
 Pour créer des liens en HTML, on va utiliser l’élément a accompagné de son attribut href qui va prendre comme valeur la cible du lien. Il y a deux types de liens: les liens permettant de se déplacer d’une page à une autre à travers un même site (liens internes) et les liens permettant de se rendre sur un autre site (lien externe). Dans les deux cas, c’est la valeur de l’attribut href qui va changer.
 
@@ -145,15 +145,10 @@ Un site n’est qu’un ensemble de fichiers liés entre eux. Il faut alors dist
 
 Exemple pour chacun des cas:  
 Fichier dans un même dossier: 
-
 `<p> Cliquer <a href=”fichier_meme_dossier.html”> ici</a> </p>` 
-
 Fichier dans un dossier parent: 
-
 `<p> Cliquer <a href=”../fichier-parent.html”> ici </a> </p>` 
-
 Fichier dans un sous-dossier de nom “sous”: 
-
 `<p> Cliquer <a href=”sous/fichier-sous.html”> ici </a> </p>`
 
 L’attribut target: Cet attribut va permettre de choisir où doit s’ouvrir notre page de destination. En pratique, nous utiliserons souvent la valeur “_blank” qui spécifie qui spécifie que la nouvelle page doit s’ouvrir dans un nouvel onglet.
@@ -164,7 +159,7 @@ _Remarque:_
 -On peut aussi permettre l’envoi d’un mail, lorsqu’un visiteur va cliquer sur le lien, sa messagerie par défaut va automatiquement s’ouvrir:
 `<p> M’envoyer <a href=”mailto: louis.somme@imt-atlantique.net”> un mail </a> </p>` 
 
-### Insérer des images en HTML:
+## Insérer des images en HTML:
 
 Chaque format d’image (JPG, PNG, GIF ou BITMAP) possède ses propres spécificités. Il faut donc bien faire attention au format lorsqu’on enregistre une image. Généralement on utilisera le format JPG.  
 L’insertion d’image dans une page HTML va se faire au moyen de l’élément img. Cet élément est représenté par une balise orpheline. De plus, on va utiliser les attributs src et alt. L’attribut src va prendre comme valeur l’adresse de l’image tandis que l’attribut alt va contenir un texte décrivant l’image. Ce texte ne va être affiché QUE si l’image n’a pas pu l’être pour une raison ou pour une autre.  
@@ -183,19 +178,63 @@ _Evaluation sur les bases en HTML_:
 ![tableau évaluation html](images/evaluation_html.png)
 
 2- Combien de niveaux d’organisation sont définis pour les titres en HTML ?
+
 3- Nous souhaitons écrire un sommaire avec le titre des grandes partie
+
     a) Est-il plus pertinent d’utiliser une liste ordonnée ou non ordonnée?
+
     b) Quel attribut permet de placer des chiffres romain en majuscule devant le titre de chaque partie
+
     c) Utiliser un code HTML pour écrire le sommaire de ce cours (les grandes partie du Chapitre “Les bases en HTML”)
 
 4- Quels attributs utilise-t-on pour ajouter une image à une page web?
 
 5- On souhaite ajouter une image d’un coucher de soleil ayant le nom coucher_soleil.png. Proposer un code HTML pour ajouter cette image à une page web.
 
+_Correction_:
 
-## Les bases en CSS:
+1-
 
-### Sélecteurs, propriétés:
+Element p       Créer un paragraphe
+
+Element a       Créer des liens vers d'autres pages
+
+Element img     Insérer une image
+
+Element br      Retour à la ligne
+
+
+2- Il existe 6 niveaux d'organisation pour les titres HTML.
+
+
+3- a) Il est dans ce cas plus pertinent d'utiliser une liste ordonnée
+
+b) L'attribut I permet de placer des chiffres romains devant le titre des parties
+
+c) ```html
+	<p> Sommaire: </p>
+
+           <ol type="I">
+
+               <li> Quelques définitions et utilité des éléments, des balises et des attributs: </li>
+               <li> Structure d'une page HTML: </li>
+               <li> Les titres et paragraphes: </li>
+               <li> Les espaces et retours à la ligne en HTML: </li>
+               <li> Définir l'importance des textes: </li>
+               <li> Les listes en HMTL: </li>
+               <li> Liens internes et externes en HTML: </li>
+               <li> Insérer des images en HTML </li>
+
+           </ol>
+	```
+
+4- Pour ajouter une image à une page web, on utilise les attributs src et alt.
+
+5- `<img src="coucher_soleil.png" alt=" Coucher de soleil" >`
+
+# Les bases en CSS:
+
+## Sélecteurs, propriétés:
 
 CSS va permettre de mettre en page un contenu et de changer son apparence en lui appliquant des styles. Pour appliquer un style à un élément HTML, il faut tout d’abord le sélectionner, c’est le rôle du sélecteur. Il existe différents types de sélecteurs appelés “sélecteurs simples” (ce sont des sélecteurs d’éléments) ou “sélecteurs complexes”.
 
@@ -219,9 +258,8 @@ Où écrire le code CSS ?
 1. On peut l’écrire dans un élément HTML style. Ainsi le code CSS ne s’appliquera qu’à la page HTML dans laquelle il a été écrit. L’élément style sera en général placé en haut d’une page HTML, à l’intérieur de l’élément head.
 Cette méthode n’est pas recommandée (soucis d’organisation).
 2. On peut écrire le CSS dans la balise ouvrante des éléments HTML en utilisant un attribut style. Par exemple: pour appliquer le style à tout un paragraphe:
-```
 <p style=”color: blue;font-size: 16px;”>Un paragraphe</p>
-```
+
 Non recommandé non plus car pas très lisible.
 
 3. La meilleure méthode est d’écrire le CSS dans un fichier séparé portant l’extension “.css” et enregistré dans le même dossier que le fichier HTML. Un avantage est qu’on va pouvoir appliquer des styles à plusieurs page HTML en même temps.
@@ -229,12 +267,12 @@ Il reste ensuite à lier le fichier CSS avec le fichier HTML avec l’élément 
 
 Exemple: <link rel=”stylesheet” href=”styles.css”>     (dans le head)
 
-### Commentaires et indentation:
+## Commentaires et indentation:
 
 On utilise la syntaxe suivante pour commenter à l’intérieur d’un code: /*Je suis un commentaire*/.
 L’indentation est importante en CSS, après chaque déclaration, il vaut mieux retourner à la ligne.
 
-### Sélecteurs CSS simples:
+## Sélecteurs CSS simples:
 
 Des exemples de sélecteurs: le sélecteur p va cibler tous les éléments d’un paragraphe, le sélecteur h1 va permettre d’appliquer des styles au titre h1, le sélecteur a va permettre de mettre en forme les liens, etc
 
@@ -254,7 +292,7 @@ Ici on applique une couleur bleue à tous nos paragraphes ainsi qu’à notre ti
 
 Nous serons vite limités avec des sélecteurs simple. En effet il n’est par exemple pas possible d’appliquer une couleur différente à deux paragraphes différents. C’est pourquoi nous pouvons utiliser les sélecteurs #id et .class qui vont permettre de cibler un élément en particulier plutôt qu’un type d’élément.
 
-### Les attributs id et class:
+## Les attributs id et class:
 
 Ces deux attributs servent à cibler un élément en particulier plutôt qu’un type. Nous allons les définir à l’intérieur d’une balise ouvrante et leur attribuer une valeur.
 
@@ -286,13 +324,13 @@ Ensuite dans le code CSS on peut par exemple appliquer deux styles à un même p
 _Attention_: Chaque id doit avoir une valeur unique tandis que plusieurs attributs class peuvent posséder la même valeur.
 En cas de conflit l’id est prioritaire sur la classe
 
-### L’héritage en CSS:
+## L’héritage en CSS:
 
 L’héritage est un principe important en CSS. Cela signifie que tout élément HTML enfant va hériter “en cascades” des styles de ses parents. Par exemple tous les éléments à l’intérieur de l’élément body sont des enfants de cet élément. Donc si on applique un style à body, tous les éléments à l’intérieur de cette balise en hériteront automatiquement.
 
 Cependant, en cas de conflit, le style prioritaire va être le style le plus proche de l’élément. Ainsi si on applique la couleur violette au body et qu’on applique ensuite la couleur rouge à un paragraphe à l’intérieur du body, ce paragraphe sera affiché en rouge.
 
-### Les éléments HTML de type block et de type inline:
+## Les éléments HTML de type block et de type inline:
 
 En HTML, tout élément est soit de type “block” (en bloc) soit de type “inline” (en ligne). Le tableau ci-dessous classe les différents éléments dans ces deux catégories.
 
@@ -381,4 +419,24 @@ img, h1, strong, em, li, p, a.
 4- En quoi consiste l’héritage en CSS ?
 
 5- Pour cibler un élément de type class, doit-on utiliser le point (.) ou le dièse (#) ?
+
+Correction :
+
+1- On écrit le CSS dans un fichier séparé car va pouvoir appliquer des styles à plusieurs page HTML en même temps. Il reste ensuite à lier le fichier CSS avec le fichier HTML avec l’élément link.
+
+2-
+```html
+h1, h2,p{
+            color: blue;
+}
+```
+
+3-
+type block: h1, li, p
+type inline: img, strong, em, a
+
+4- L'héritage en CSS consiste à faire hériter “en cascades” les enfants des styles de ses parents. Par exemple tous les éléments à l’intérieur de l’élément body sont des enfants de cet élément. Donc si on applique un style à body, tous les éléments à l’intérieur de cette balise en hériteront automatiquement.
+
+5-Pour cibler un élément de type class, on utilise le point (.)
+
 
