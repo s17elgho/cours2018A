@@ -1,7 +1,7 @@
-# Présentation Bootstrap 
+# Présentation Bootstrap
 
-Bootstrap est un ensemble d'outils qui sert à la création du design (graphisme, animation et interactions avec la page dans le navigateur ... etc. ...) de sites et d'applications web. Il contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option. C'est l'un des projets les plus populaires sur la plate-forme de gestion de développement GitHub. 
-Il permet de facilement installer et mettre à jour les paquets, régler le problème des dépendances. 
+Bootstrap est un ensemble d'outils qui sert à la création du design (graphisme, animation et interactions avec la page dans le navigateur ... etc. ...) de sites et d'applications web. Il contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option. C'est l'un des projets les plus populaires sur la plate-forme de gestion de développement GitHub.
+Il permet de facilement installer et mettre à jour les paquets, régler le problème des dépendances.
 
 # Installation Bootstrap
 
@@ -31,10 +31,11 @@ Créez dans le répertoire <span style="color:red">ELU525</span>  un fichier HTM
 ```
 
 Il s’agit d’une page Web classique avec quelques éléments spécifiques :
--	une balise  <span style="color:red"><link></span> vers la feuille de style Bootstrap ;
--	une balise<span style="color:red"><meta name="viewport"></span>  définissant le viewport, c’est-à-dire la surface de la fenêtre du navigateur qui affiche la page. Cela va permettre à la page de s’adapter à la dimension du terminal client ;
--	une balise <span style="color:red"><meta></span>  permettant un affichage correct sur le navigateur Internet Explorer ;
--	des balises <span style="color:red"><script></span>  qui activent les plugins jQuery de Bootstrap. Ces plugins sont nécessaires pour animer les composants Bootstrap.
+
+*	une balise  <span style="color:red"><link></span> vers la feuille de style Bootstrap ;
+*	une balise<span style="color:red"><meta name="viewport"></span>  définissant le viewport, c’est-à-dire la surface de la fenêtre du navigateur qui affiche la page. Cela va permettre à la page de s’adapter à la dimension du terminal client ;
+*	une balise <span style="color:red"><meta></span>  permettant un affichage correct sur le navigateur Internet Explorer ;
+*	des balises <span style="color:red">scripo<script></span>  qui activent les plugins jQuery de Bootstrap. Ces plugins sont nécessaires pour animer les composants Bootstrap.
 
 Ouvrez cette page dans votre navigateur Web favori. Vous obtenez le résultat ci-dessous.
 
@@ -119,13 +120,13 @@ On peut ajouter facilement une barre de navigation horizontale grâce à la clas
 ```
 ![](https://i.imgur.com/1eS9WYf.png)
 
-# Système de Grille 
+# Système de Grille
 L'organisation spatiale des pages web est l'une des premières préoccupations lorsque l'on crée un site web. Prévoit-on une bannière ? Faut-il un espace pour un menu à gauche ou en haut ? Y aura-t-il des blocs sur un des côtés pour recevoir certaines fonctionnalités comme la connexion ou des infos ? Faut-il prévoir un bas de page ?
 
 Bootstrap ne répond évidemment pas à ces questions, mais il peut grandement vous faciliter la tâche, avec son système de grille, pour obtenir le résultat que vous souhaitez. En résumé:
 
 1. Bootstrap propose une grille pour positionner tous les éléments des pages web.
- 
+
 1. La grille est versatile et permet de nombreuses combinaisons comme des inclusions, des sauts de colonnes.
 
 1. La grille rend possible également une adaptation selon les dimensions du support de visualisation en réorganisant les éléments ou en masquant certains.
@@ -204,14 +205,14 @@ Voici le rendu avec une surface d’affichage importante.
 
 Voici le rendu lorsque la surface d’affichage diminue.
 ![](https://i.imgur.com/3dKbgfm.png)
- 
- 
+
+
 # TRAVAUX PRATIQUES
 
 # Dropdowns
 Menu contextuel commutable permettant d'afficher des listes de lien. il faut ajouter le code suivant dans son code Html à la position souhaitée.
-*     Exemple 
-Création d'un menu déroulant avec des liens vers des pages. 
+*     Exemple
+Création d'un menu déroulant avec des liens vers des pages.
 ```
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -227,10 +228,10 @@ Création d'un menu déroulant avec des liens vers des pages.
   </ul>
 </div>
 ```
-on obtient le résultat suivant: 
+on obtient le résultat suivant:
 ![](https://i.imgur.com/sklo5aE.png)
 
-# Les Onglets 
+# Les Onglets
 
 Notez que la .nav-tabsclasse nécessite la .navclasse de base.
 Exemple :
@@ -248,7 +249,7 @@ Exemple :
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 ```
-# A vous de jouer 
+# A vous de jouer
 En vous servant de ce cours et de la documentation sur boostrap [ici](https://getbootstrap.com/docs/4.1/getting-started/introduction/), réalisez cet exercice.
 Il s'agit de réproduire la meme page en utilisant les différentes notions de bootstrap.
 ![](https://i.imgur.com/dk39NnT.png)
@@ -262,4 +263,3 @@ http://www.opentuto.com/informatique/maitriser-bootstrap-3-par-la-pratique/
 
 
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
-
