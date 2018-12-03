@@ -196,6 +196,16 @@ Le contrôleur frontal est donc en place et permet le routage d'URL.
 
 
 ## 4 - Présentation du contenu avec les templates
+
+Désormais, nous allons nous intéresser aux templates, qui nous permettent d’afficher des données.
+Pour se faire, Django permet d’utiliser des balises de gabarit, directement intégrées au framework. 
+
+Tout d’abord, nous devons vous présenter les balises de template. Du fait que les navigateurs ne comprennent que l’HTML, on ne peut directement intégrer du code Python au sein d’un code HTML. Python est un langage dynamique contrairement à l’HTML, plutôt statique.
+
+Les balises de template Django servent à construire des sites web, au sein desquels on peut insérer du code ressemblant à du python. 
+
+Pour afficher une variable dans un template, il faut utiliser des doubles accolades à l’intérieur desquelles on placera le nom de la variable : {{ posts }}
+
 ## 5 - Administration du projet avec le scaffolding
 
 ### Installation
