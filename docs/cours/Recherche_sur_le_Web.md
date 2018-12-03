@@ -1,7 +1,6 @@
 # Recherche sur le Web 
 
-Objectif : Ce cours s'adresse
-à Rédiger
+Objectif : L'idée de ce cours est d'apprendre à effectuer des recherches pertinentes et à savoir exploiter l'information. Tout en s'interrogeant sur les thématiques liés aux recherches Web.
 
 Plan du cours : 
 1. Rechercher plus efficacement sur le web
