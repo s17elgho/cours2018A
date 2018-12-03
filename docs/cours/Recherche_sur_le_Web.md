@@ -5,21 +5,31 @@ Objectif : Ce cours s'adresse
 
 Plan du cours : 
 1. Rechercher plus efficacement sur le web
+
     a) Les moteurs de recherches
+    
     b) Se poser les bonnes questions
+    
     c) Les opérateurs de recherche et la recherche sélective
     
 2.  Valider la crédibilité de l’information
 
 3.  Exploiter l’information
+
     a) Droit de l'auteur
+    
     b) Droit à l'image
+    
     c) Conseils
+    
     d) QCM résolu
     
 4.  Faire des recherches en laissant le moins de traces possible / sécuriser sa navigation 
+
     A) Effacer les traces de sa navigation
+    
     B) Utiliser un moteur de recherche respectant la          vie privée
+    
     C) Utiliser un navigateur respectant la vie privée
 
 
