@@ -202,6 +202,7 @@ http://exercices.openclassrooms.com/test/27
 ![](https://i.imgur.com/Sx03VZh.png)
 Solutions : 
 http://exercices.openclassrooms.com/test/25
+
 Exemple : 
 [](https://www.sites.univ-rennes2.fr/urfist/Supports/evaluationinfo/InternetDetective/5_1.html)
 https://www.sites.univ-rennes2.fr/urfist/Supports/evaluationinfo/InternetDetective/5_1.html
