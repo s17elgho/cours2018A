@@ -1,5 +1,5 @@
-# Cours 2018
-## La sécurité sur le web
+# La sécurité sur le web
+
 ## Introduction
 
 De la même manière qu’il propose un nombre presque infini de fonctionnalités, le web peut porter atteinte à notre sécurité, et les failles de sécurité qui lui sont liées sont très nombreuses. Pour s’en prémunir et naviguer en toute sécurité, il faut être au courant des risques et les comprendre. Ce cours a pour but d’avertir sur ces risques, d’expliquer les mécanismes du web qui présentent des failles et sont par conséquent un danger potentiel pour les internautes. Ce cours présente également une solution de sécurité : le VPN, qui permet entre autres de cacher ses informations.
