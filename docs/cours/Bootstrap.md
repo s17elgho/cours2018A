@@ -34,7 +34,7 @@ Il s’agit d’une page Web classique avec quelques éléments spécifiques.
 - une balise ```<script>``` qui activent les plugins jQuery de Bootstrap. Ces plugins sont nécessaires pour animer les composants Bootstrap.
 
 Ouvrez cette page dans votre navigateur Web favori. Vous obtenez le résultat ci-dessous.
-![](https://i.imgur.com/3QyIaHr.png)
+![]( images/1.png )
 
 
 # Quelques composants de Bootstrap
@@ -43,7 +43,7 @@ Bootstrap fournit de nombreux composants prêts à être intégrés dans pages W
 ```
 Je boirais bien un <span class="glyphicon glyphicon-glass"></span> avant  d'aller écouter de la <span class="glyphicon glyphicon-music"></span> avec ma <span class="glyphicon glyphicon-heart"></span>
 ``` 
- ![](https://i.imgur.com/wAAIwEd.png)
+ ![](images/2.png)
 
 
 De plus, Bootstrap fournit une classe img-responsive qui permet aux images (balises HTML < img>) de se redimensionner automatiquement à la taille de leur conteneur parent.
@@ -56,7 +56,7 @@ Bootstrap fournit un moyen simple d’obtenir des boutons élégants et personna
 <button type="button" class="btn btn-danger btn-xs">Danger</button>
 <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Panier</button>
 ```
-![](https://i.imgur.com/jfLBFHc.png)
+![](images/3.png)
 
 
 - Messages
@@ -67,7 +67,7 @@ Bootstrap permet de définir des messages faciles à repérer dans une page Web.
 <div class="alert alert-warning">Attention...</div>
 <div class="alert alert-danger">Erreur !</div>
 ```
-![](https://i.imgur.com/oqqvIu1.png)
+![](images/4.png)
 
 
 - Menus de navigation
@@ -93,7 +93,7 @@ Il existe deux possibilités pour concevoir un menu de navigation: utiliser la c
     </div>
 </div>
 ```
-![](https://i.imgur.com/rHXSXuE.png)
+![](images/5.png)
 
 - Barre de navigation
 On peut ajouter facilement une barre de navigation horizontale grâce à la classe Bootstrap navbar.
@@ -111,7 +111,7 @@ On peut ajouter facilement une barre de navigation horizontale grâce à la clas
 </nav>
 ```
 
-![](https://i.imgur.com/GLyXFqd.png)
+![](images/6.png)
 
 
 # Système de Grille 
@@ -133,7 +133,7 @@ Bootstrap fournit une classe CSS container utilisée pour regrouper d’autres �
 A l’intérieur d’un container, Bootstrap gère la zone d’affichage sous la forme d’une grille de 12 colonnes. La classe Bootstrap row crée une ligne dans cette grille, et chaque classe Bootstrap col-* crée une cellule qui regroupe * colonnes dans cette ligne.
 
 Dans chaque ligne, la taille totale des colonnes doit être égale à 12. On peut donc choisir de diviser la surface d’affichage en 12 colonnes de taille 1, ou bien en 3 colonnes de taille 4, ou encore en une colonne de taille 4 et une colonne de taille 8.
-![](https://i.imgur.com/hk3t8IJ.png)
+![](images/7.png)
 
 
 - Démonstration
@@ -192,12 +192,12 @@ Ensuite, éditez le fichier index.html comme indiqué ci-dessous.
 On remarque au passage que le total des tailles des colonnes (3+7+2) est bien égal à 12. Ouvrez cette page dans un navigateur Web. Le placement des colonnes s’adapte à la surface d’affichage disponible.
 
 Voici le rendu avec une surface d’affichage importante.
-![](https://i.imgur.com/mF1IxWB.png)
+![](images/8.png)
 
 
 
 Voici le rendu lorsque la surface d’affichage diminue.
-![](https://i.imgur.com/VoZmhex.png)
+![](images/9.png)
 
 
 
@@ -223,7 +223,7 @@ Création d'un menu déroulant avec des liens vers des pages.
   </ul>
 </div>
 ```
-on obtient le résultat ![](https://i.imgur.com/GshT34l.png)
+on obtient le résultat ![](images/10.png)
 
 
 
@@ -243,7 +243,7 @@ Exemple:
 En vous servant de ce cours et de la documentation sur boostrap [ici](https://getbootstrap.com/docs/4.1/getting-started/introduction/), réalisez cet exercice.
 Il s'agit de réproduire la meme page en utilisant les différentes notions de bootstrap.
 
-![](https://i.imgur.com/QISb5O1.png)
+![](images/11.png)
 
 
 
